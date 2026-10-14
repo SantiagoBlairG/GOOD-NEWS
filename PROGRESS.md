@@ -30,6 +30,8 @@
 - Known limits: no supplied screenshot references, no physical-phone/screen-reader audit or measured 60fps, no production map account, individual photo contributors unverified, large library bundle warning. App remains fictional and device-local.
 - Impeccable context reported that PRODUCT.md lacks its expanded schema stamp; supplied product facts remain preserved. An optional Impeccable init/schema expansion can be done later without blocking implementation.
 ## Next task
+- Map visual update: owner-supplied world image guides green country fills, white oceans, and subtle borders. Applied consistently to preview and full maps through a shared MapLibre style transformation; removed multicolor fills and map labels/graticules. Country shades are decorative, not story metrics. Markers, clusters, filtering, and list fallback remain functional.
+- Article layout update: app header/logo/demo pill removed from article routes; cover starts at page top and spans viewport width. Back/Save/Share overlay the cover; reading width stays comfortable, with the fictional-content notice in the body. Publisher logo removed as well.
 - Appearance update: light is the default for fresh/reset state. A persistent header sun/moon toggle switches light/dark on every route, using the same saved preference as Profile. Existing explicit preferences are retained.
 - Owner reviews the local MVP with `npm run dev`. Incorporate supplied reference screenshots or requested changes when available.
 - Phase 6 remains deferred until owner requests PWA/offline support or verified real news. No deployment, authentication, news ingestion, or subscription was performed.

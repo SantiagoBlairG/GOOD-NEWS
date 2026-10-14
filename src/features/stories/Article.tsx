@@ -56,35 +56,34 @@ export function Article() {
   }
   return (
     <article className="article">
-      <div className="article-toolbar">
-        <Button
-          variant="secondary"
-          onClick={() => {
-            const origin = location.state?.from;
-            if (typeof origin === 'string' && origin.startsWith('/')) navigate(-1);
-            else navigate('/');
-          }}
-        >
-          <ArrowLeft size={18} />
-          Back
-        </Button>
-        <div>
-          <SaveButton story={s} compact />
-          <button
-            className="icon-button"
-            aria-label="Share story"
-            onClick={(event) => {
-              event.currentTarget.focus();
-              void share();
-            }}
-          >
-            <Share2 size={20} />
-          </button>
-        </div>
-      </div>
       <div className="hero article-hero">
         <StoryImage story={s} loading="eager" />
-        <span className="demo-tag">Fictional demo story</span>
+        <div className="article-toolbar">
+          <Button
+            variant="secondary"
+            onClick={() => {
+              const origin = location.state?.from;
+              if (typeof origin === 'string' && origin.startsWith('/')) navigate(-1);
+              else navigate('/');
+            }}
+          >
+            <ArrowLeft size={18} />
+            Back
+          </Button>
+          <div>
+            <SaveButton story={s} compact />
+            <button
+              className="icon-button"
+              aria-label="Share story"
+              onClick={(event) => {
+                event.currentTarget.focus();
+                void share();
+              }}
+            >
+              <Share2 size={20} />
+            </button>
+          </div>
+        </div>
         <div className="hero-copy">
           <span className="topic">{topicName(s.topicIds[0])}</span>
           <h1 ref={title} tabIndex={-1}>
@@ -108,7 +107,6 @@ export function Article() {
           </span>
         </div>
         <div className="publisher">
-          <SunMark />
           <div>
             <strong>{s.publisher}</strong>
             {s.author && <p>{s.author.name}</p>}
@@ -151,7 +149,4 @@ export function Article() {
       </Modal>
     </article>
   );
-}
-function SunMark() {
-  return <span className="publisher-mark">bs.</span>;
 }

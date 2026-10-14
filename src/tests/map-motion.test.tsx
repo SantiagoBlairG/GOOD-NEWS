@@ -21,6 +21,7 @@ vi.mock('maplibre-gl', () => ({
         typeof layerOrCallback === 'function' ? layerOrCallback : callback!,
       );
     }
+    setStyle() {}
     addSource() {}
     addLayer() {}
     remove() {

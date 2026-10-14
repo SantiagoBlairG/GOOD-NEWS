@@ -96,11 +96,12 @@
       "deckMaxWidth": "460px",
       "mainMaxWidth": "1100px",
       "readingMaxWidth": "68ch",
-      "articleMaxWidth": "800px",
-      "articleHeroPaddingTop": "80px",
+      "articleMaxWidth": "none; full viewport width",
+      "articleHeroPaddingTop": "96px",
       "bottomReserve": "calc(var(--nav-height, 90px) + 40px)",
       "toastBottom": "calc(var(--nav-height, 90px) + 12px)",
-      "navHeight": "ResizeObserver-measured; safe-area included"
+      "navHeight": "ResizeObserver-measured; safe-area included",
+      "articlePresentation": "Cover begins at viewport top, full bleed with no app header/logo/demo pill. Back/Save/Share overlay the cover; fictional notice stays in reading content."
     },
     "behavior": {
       "operateRoutes": [
@@ -129,6 +130,21 @@
       "approvedComp": false,
       "referenceScreenshotsAvailable": false,
       "deployed": false
+    },
+    "mapPresentation": {
+      "reference": "Owner-supplied green world map",
+      "ocean": "#ffffff",
+      "countryPalette": [
+        "#3d6026",
+        "#d5e383",
+        "#afce36",
+        "#91bd42",
+        "#6e9c3d",
+        "#b8d45a"
+      ],
+      "boundaries": "#eef3dc",
+      "labels": "Story overlays only",
+      "meaning": "Country shades are decorative; no encoded story metrics"
     }
   },
   "components": [

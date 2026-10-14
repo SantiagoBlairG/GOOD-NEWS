@@ -137,3 +137,11 @@ Map markers coexist with a story-list alternative. Effective reduced motion is t
 - Do keep Read mode focused on the article and return navigation.
 - Don't invent screenshot approval, verified real news, accounts, sync, or deployment status.
 - Don't replace the approved direction with decorative landing-page sections, urgency, autoplay, streaks, or consumption rewards.
+
+## Article presentation update
+
+Owner-requested refinement: article routes omit the app header, logo, and demo pill. The cover starts at page top and spans the viewport with square upper corners. Back, Save, and Share overlay the image with safe-area spacing. Hero top padding is 96px; body measure remains 68ch, with a rounded reading surface and fictional-content notice in the body. This supersedes the earlier 800px article container and 80px hero top padding.
+
+## Map visual update
+
+The owner's supplied map is the visual reference: white oceans, green country fills ranging from pale chartreuse to deep forest green, and fine pale country borders. No multicolor geography, background place labels, or graticules. Both map surfaces use the shared greenMapStyle transformation; country colors are decorative and encode no data. Story markers and clusters remain interactive overlays.

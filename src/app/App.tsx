@@ -69,20 +69,22 @@ function Shell() {
         Skip to content
       </a>
       <ScrollRestoration />
-      <header className="brand-bar">
-        <Link to="/" className="brand">
-          <Sun />
-          <span>
-            bright side<span className="brand-dot">.</span>
-          </span>
-        </Link>
-        <span className="edition">A little good goes a long way.</span>
-        <div className="header-actions">
-          <span className="demo-label">FICTIONAL DEMO</span>
-          <ThemeToggle />
-        </div>
-      </header>
-      {storageWarning && (
+      {!article && (
+        <header className="brand-bar">
+          <Link to="/" className="brand">
+            <Sun />
+            <span>
+              bright side<span className="brand-dot">.</span>
+            </span>
+          </Link>
+          <span className="edition">A little good goes a long way.</span>
+          <div className="header-actions">
+            <span className="demo-label">FICTIONAL DEMO</span>
+            <ThemeToggle />
+          </div>
+        </header>
+      )}
+      {storageWarning && !article && (
         <p role="status" className="storage-warning">
           {storageWarning}
         </p>
@@ -99,6 +101,11 @@ function Shell() {
           <Route path="*" element={<Missing />} />
         </Routes>
       </main>
+      {storageWarning && article && (
+        <p role="status" className="storage-warning">
+          {storageWarning}
+        </p>
+      )}
       {!article && (
         <nav ref={nav} className="bottom-nav" aria-label="Primary">
           {[

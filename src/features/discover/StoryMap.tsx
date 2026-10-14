@@ -6,6 +6,7 @@ import type { Story } from '../../lib/schemas';
 import { storyGeoJSON } from './filter';
 import { MapPin } from 'lucide-react';
 import { useApp } from '../../state/provider';
+import { greenMapStyle } from './mapStyle';
 maplibregl.setWorkerUrl(workerUrl);
 export default function StoryMap({
   stories,
@@ -33,11 +34,11 @@ export default function StoryMap({
     let timer: number | undefined;
     try {
       const key = import.meta.env.VITE_MAPTILER_KEY;
+      const styleUrl = key
+        ? `https://api.maptiler.com/maps/streets-v2/style.json?key=${encodeURIComponent(key)}`
+        : 'https://demotiles.maplibre.org/style.json';
       instance = new maplibregl.Map({
         container: container.current,
-        style: key
-          ? `https://api.maptiler.com/maps/streets-v2/style.json?key=${encodeURIComponent(key)}`
-          : 'https://demotiles.maplibre.org/style.json',
         center: [0, 18],
         zoom: preview ? 1 : 1.3,
         attributionControl: { compact: true },
@@ -45,6 +46,7 @@ export default function StoryMap({
         renderWorldCopies: false,
       });
       map.current = instance;
+      instance.setStyle(styleUrl, { transformStyle: greenMapStyle });
       timer = window.setTimeout(() => {
         if (!disposed) setStatus('failed');
       }, 12000);

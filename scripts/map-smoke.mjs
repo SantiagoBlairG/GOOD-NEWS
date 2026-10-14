@@ -16,4 +16,5 @@ console.log(
   }),
 );
 await page.screenshot({ path: 'docs/previews/map-smoke.png', fullPage: true });
+await page.locator('.map-container').screenshot({ path: 'docs/previews/green-map.png' });
 await browser.close();
