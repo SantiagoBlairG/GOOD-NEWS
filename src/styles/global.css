@@ -1957,7 +1957,11 @@ section {
   .global-preview {
     margin-top: 36px;
     min-height: 340px;
-    grid-template-columns: 1.4fr 1fr;
+  }
+  .global-preview .compact-map {
+    position: absolute;
+    inset: 0;
+    height: 100%;
   }
   .global-preview-copy {
     padding: 44px;

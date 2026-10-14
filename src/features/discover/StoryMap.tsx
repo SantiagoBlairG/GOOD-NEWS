@@ -32,6 +32,7 @@ export default function StoryMap({
     let instance: maplibregl.Map | null = null;
     let disposed = false;
     let timer: number | undefined;
+    let resizeObserver: ResizeObserver | undefined;
     try {
       const key = import.meta.env.VITE_MAPTILER_KEY;
       const styleUrl = key
@@ -46,6 +47,8 @@ export default function StoryMap({
         renderWorldCopies: false,
       });
       map.current = instance;
+      resizeObserver = new ResizeObserver(() => instance?.resize());
+      resizeObserver.observe(container.current);
       instance.setStyle(styleUrl, { transformStyle: greenMapStyle });
       timer = window.setTimeout(() => {
         if (!disposed) setStatus('failed');
@@ -143,6 +146,7 @@ export default function StoryMap({
     return () => {
       disposed = true;
       clearTimeout(timer);
+      resizeObserver?.disconnect();
       instance?.remove();
       map.current = null;
     };
