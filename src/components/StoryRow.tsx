@@ -3,6 +3,7 @@ import { Bookmark, ArrowUpRight, Leaf } from 'lucide-react';
 import type { Story } from '../lib/schemas';
 import { date, topicName } from '../lib/repository';
 import { useApp } from '../state/provider';
+import { useOpenStory } from '../features/stories/useOpenStory';
 export function StoryImage({
   story,
   loading = 'lazy',
@@ -59,12 +60,26 @@ export function SaveButton({ story, compact = false }: { story: Story; compact?:
 }
 export function StoryRow({ story, grid = false }: { story: Story; grid?: boolean }) {
   const location = useLocation();
+  const openStory = useOpenStory();
   return (
     <div className={grid ? 'small-story' : 'story-row'}>
       <Link
         to={'/story/' + story.id}
         state={{ from: location.pathname + location.search }}
         className="story-row-link"
+        onClick={(event) => {
+          if (
+            event.defaultPrevented ||
+            event.button !== 0 ||
+            event.metaKey ||
+            event.ctrlKey ||
+            event.shiftKey ||
+            event.altKey
+          )
+            return;
+          event.preventDefault();
+          openStory(story.id, event.currentTarget);
+        }}
       >
         <StoryImage story={story} />
         <div>

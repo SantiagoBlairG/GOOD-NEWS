@@ -5,13 +5,19 @@ import {
   useReducer,
   useState,
   useCallback,
+  useSyncExternalStore,
   type ReactNode,
   type Dispatch,
 } from 'react';
-import { useReducedMotion } from 'motion/react';
 import { reducer, type State, type Action, initialState } from './reducer';
 import { readStorage, writeStorage } from '../lib/storage';
 type Toast = { message: string; undo?: () => void };
+const subscribeMotion = (callback: () => void) => {
+  const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+  media.addEventListener('change', callback);
+  return () => media.removeEventListener('change', callback);
+};
+const motionPreference = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const Context = createContext<{
   state: State;
   dispatch: Dispatch<Action>;
@@ -34,7 +40,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(reducer, loaded.state);
   const [storageWarning, setWarning] = useState(loaded.warning);
   const [toast, setToast] = useState<Toast | null>(null);
-  const osReduced = useReducedMotion();
+  const osReduced = useSyncExternalStore(subscribeMotion, motionPreference, () => false);
   const notify = useCallback(
     (message: string, undo?: () => void) => setToast({ message, undo }),
     [],

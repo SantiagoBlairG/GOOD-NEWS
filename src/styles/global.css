@@ -728,6 +728,129 @@ section {
   object-fit: cover;
   flex-shrink: 0;
 }
+
+/* The card cover becomes the full-bleed article cover; supporting content follows. */
+[data-story-opening='true'] {
+  view-transition-name: article-cover;
+}
+[data-article-transition='opening'] .article-hero {
+  view-transition-name: article-cover;
+}
+[data-story-opening-title='true'] {
+  view-transition-name: article-title;
+}
+::view-transition-group(article-title) {
+  animation-duration: 520ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+::view-transition-old(article-title) {
+  animation: article-scene-out 120ms ease-out both;
+}
+[data-article-transition='opening'] .article-hero .hero-copy {
+  view-transition-name: article-title;
+}
+[data-article-transition='opening'] .article .reading {
+  view-transition-name: article-reading;
+}
+[data-article-transition='opening'] .article-toolbar {
+  view-transition-name: article-controls;
+}
+::view-transition {
+  pointer-events: none;
+}
+::view-transition-group(article-cover) {
+  animation-duration: 520ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  overflow: hidden;
+  border-radius: 0;
+}
+::view-transition-old(article-cover),
+::view-transition-new(article-cover) {
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: normal;
+  animation-duration: 360ms;
+}
+::view-transition-old(root) {
+  animation: article-scene-out 160ms ease-out both;
+}
+::view-transition-new(root) {
+  animation: article-scene-in 300ms 80ms ease-out both;
+}
+::view-transition-new(article-title) {
+  animation: article-title-in 420ms 110ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+::view-transition-new(article-reading) {
+  animation: article-sheet-in 480ms 120ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+::view-transition-new(article-controls) {
+  animation: article-scene-in 240ms 180ms ease-out both;
+}
+@keyframes article-scene-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes article-scene-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes article-title-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes article-sheet-in {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes article-cover-in {
+  from {
+    opacity: 0.8;
+    transform: scale(1.035);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.article-enter .article-cover {
+  animation: article-cover-in 560ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.article-enter .hero-copy {
+  animation: article-title-in 420ms 80ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.article-enter .reading {
+  animation: article-sheet-in 480ms 120ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.article-enter .article-toolbar {
+  animation: article-scene-in 240ms 140ms ease-out both;
+}
+.article.article-enter-reduced {
+  animation: article-scene-in 120ms ease-out both !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
 .publisher p {
   font-size: 12px;
   margin: 2px 0;

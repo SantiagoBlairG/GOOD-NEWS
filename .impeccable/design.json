@@ -150,6 +150,17 @@
       "content": "Mock editorial content with no product demo labels or disclaimer copy",
       "byline": "Named mock author, 48px circular local stock avatar, Bright Side publisher",
       "provenance": "Internal mock-content metadata and developer asset credits retained"
+    },
+    "articleMotion": {
+      "coverDuration": "520ms",
+      "coverEase": "cubic-bezier(.22,1,.36,1)",
+      "readingDuration": "480ms",
+      "readingDelay": "120ms",
+      "readingTravel": "28px",
+      "controlsDuration": "240ms",
+      "reduced": "120ms opacity-only, live OS preference",
+      "navigation": "Await committed article before native snapshot; Back interrupts",
+      "fallback": "CSS entrance when View Transitions unavailable"
     }
   },
   "components": [

@@ -149,3 +149,7 @@ The owner's supplied map is the visual reference: white oceans, green country fi
 ## Editorial presentation update
 
 Owner instructions supersede the earlier demo-label contract: no fictional/demo pills or disclaimer copy in product screens, article prose, or sharing text. Byline pairs a 48px round local portrait with a named mock author and Bright Side publisher. Internal mock-content provenance and stock-asset credits remain in development records.
+
+## Article opening motion
+
+Focal sequence: the selected cover expands into the full-width article cover in 520ms with cubic-bezier(.22,1,.36,1), preserving the image gradient. The title follows its shared position; the reading sheet enters over 480ms with a 120ms delay and 28px rise. Controls fade in over 240ms. No bounce or looping motion. Home, Discover, Saved, map-sheet lists, and related links share one opening helper. Wait for the committed article before taking the destination snapshot; Back interrupts the transition. Native View Transitions have a CSS entrance fallback, and effective reduced motion uses a 120ms opacity change without spatial travel. OS setting changes are observed live. Default content remains visible and navigation focus/origin behavior is preserved. [View Transitions API reference](https://developer.mozilla.org/en-US/docs/Web/API/Document/startViewTransition).

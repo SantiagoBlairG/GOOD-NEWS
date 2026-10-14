@@ -11,7 +11,7 @@ export function Article() {
   const s = repository.get(storyId ?? '');
   const location = useLocation();
   const navigate = useNavigate();
-  const { notify } = useApp();
+  const { notify, reduced } = useApp();
   const title = useRef<HTMLHeadingElement>(null);
   const [shareFallback, setFallback] = useState(false);
   useEffect(() => {
@@ -55,9 +55,20 @@ export function Article() {
     }
   }
   return (
-    <article className="article">
+    <article
+      key={s.id}
+      data-story-id={s.id}
+      className={
+        'article ' +
+        (reduced
+          ? 'article-enter-reduced'
+          : location.state?.motion === 'shared'
+            ? ''
+            : 'article-enter')
+      }
+    >
       <div className="hero article-hero">
-        <StoryImage story={s} loading="eager" />
+        <StoryImage story={s} loading="eager" className="article-cover" />
         <div className="article-toolbar">
           <Button
             variant="secondary"

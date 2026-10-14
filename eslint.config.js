@@ -32,6 +32,7 @@ export default tseslint.config(
         document: 'readonly',
         innerWidth: 'readonly',
         localStorage: 'readonly',
+        window: 'readonly',
       },
     },
   },

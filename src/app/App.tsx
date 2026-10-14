@@ -8,6 +8,7 @@ import { Discover } from '../features/discover/Discover';
 import { Saved } from '../features/saved/Saved';
 import { Profile } from '../features/profile/Profile';
 import { ThemeToggle } from '../components/ThemeToggle';
+import { cancelStoryTransition } from '../features/stories/useOpenStory';
 
 import { Button } from '../components/ui/button';
 function Missing() {
@@ -28,6 +29,7 @@ function ScrollRestoration() {
   const navigationType = useNavigationType();
   const previous = useRef(location);
   useLayoutEffect(() => {
+    if (navigationType === 'POP') cancelStoryTransition();
     const old = previous.current;
     scrollPositions.set(old.key, window.scrollY);
     if (!old.pathname.startsWith('/story/'))

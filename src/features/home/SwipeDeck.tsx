@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { useNavigate, useLocation, Link } from 'react-router';
+import { Link } from 'react-router';
 import { motion, useMotionValue, useTransform, useAnimate } from 'motion/react';
 import { Sun, Undo2, X, Bookmark, ArrowUpRight } from 'lucide-react';
 import { useApp } from '../../state/provider';
@@ -8,10 +8,10 @@ import { newBatch } from '../../state/reducer';
 import { StoryImage } from '../../components/StoryRow';
 import { Button } from '../../components/ui/button';
 import type { Story } from '../../lib/schemas';
+import { useOpenStory } from '../stories/useOpenStory';
 export function SwipeDeck() {
   const { state, dispatch, notify, reduced } = useApp();
-  const navigate = useNavigate();
-  const location = useLocation();
+  const openStory = useOpenStory();
   const [exitingStory, setExitingStory] = useState<Story | null>(null);
   const story = exitingStory ?? repository.get(state.batch[state.cursor] ?? '');
   const [scope, animate] = useAnimate();
@@ -123,14 +123,13 @@ export function SwipeDeck() {
                 )
                   void commit(info.offset.x > 0 ? 'save' : 'skip');
               }}
-              onClick={() => {
-                if (!moved.current && !lock.current)
-                  navigate('/story/' + story.id, { state: { from: location.pathname } });
+              onClick={(event) => {
+                if (!moved.current && !lock.current) openStory(story.id, event.currentTarget);
               }}
               onKeyDown={(e) => {
                 if (e.key === 'Enter' || e.key === ' ') {
                   e.preventDefault();
-                  navigate('/story/' + story.id, { state: { from: '/' } });
+                  if (!lock.current) openStory(story.id, e.currentTarget);
                 }
                 if (e.key === 'ArrowRight') {
                   e.preventDefault();
