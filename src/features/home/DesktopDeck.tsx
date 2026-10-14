@@ -1,4 +1,4 @@
-import { useRef, useState, useLayoutEffect } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router';
 import { motion, useMotionValue, useTransform, animate } from 'motion/react';
 import { ArrowLeft, ArrowRight, ArrowUpRight, Sun, Bookmark, X } from 'lucide-react';
@@ -7,6 +7,7 @@ import { StoryImage, StoryRow, SaveButton } from '../../components/StoryRow';
 import { useApp } from '../../state/provider';
 import { useOpenStory } from '../stories/useOpenStory';
 import { useCardSwipe } from './useCardSwipe';
+import { useCardArrival } from './useCardArrival';
 
 let rememberedIndex = 0;
 export function DesktopDeck() {
@@ -20,10 +21,7 @@ export function DesktopDeck() {
   const x = useMotionValue(0);
   const opacity = useMotionValue(1);
   const rotate = useTransform(x, [-600, 0, 600], reduced ? [0, 0, 0] : [-5, 0, 5]);
-  useLayoutEffect(() => {
-    x.set(0);
-    opacity.set(1);
-  }, [index, x, opacity]);
+  const { scale, stopArrival } = useCardArrival(story.id, x, opacity, reduced);
   async function move(direction: number, save = false) {
     if (lock.current) return;
     const next = Math.max(0, Math.min(stories.length - 1, index + direction));
@@ -34,6 +32,7 @@ export function DesktopDeck() {
       void animate(x, 0, { type: 'spring', stiffness: 350, damping: 30 });
       return;
     }
+    stopArrival();
     lock.current = true;
     setLocked(true);
     await Promise.all([
@@ -101,7 +100,7 @@ export function DesktopDeck() {
               role="link"
               tabIndex={locked ? -1 : 0}
               aria-label={`Read ${story.title}`}
-              style={{ x, opacity, rotate }}
+              style={{ x, opacity, rotate, scale }}
               onPointerDown={swipe.onPointerDown}
               onPointerMove={swipe.onPointerMove}
               onPointerUp={swipe.onPointerUp}

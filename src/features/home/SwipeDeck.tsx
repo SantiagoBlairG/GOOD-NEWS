@@ -1,4 +1,4 @@
-import { useRef, useState, useLayoutEffect, useEffect, useSyncExternalStore } from 'react';
+import { useRef, useState, useEffect, useSyncExternalStore } from 'react';
 import { Link } from 'react-router';
 import { motion, useMotionValue, useTransform, animate } from 'motion/react';
 import { Sun, Undo2, X, Bookmark, ArrowUpRight } from 'lucide-react';
@@ -11,6 +11,7 @@ import type { Story } from '../../lib/schemas';
 import { useOpenStory } from '../stories/useOpenStory';
 import { useCardSwipe } from './useCardSwipe';
 import { DesktopDeck } from './DesktopDeck';
+import { useCardArrival } from './useCardArrival';
 const desktopQuery = () => window.matchMedia('(min-width: 1024px)');
 const subscribeDesktop = (callback: () => void) => {
   const query = desktopQuery();
@@ -45,13 +46,11 @@ function MobileDeck() {
     isLocked: () => lock.current,
     onCommit: (kind) => void commit(kind),
   });
-  useLayoutEffect(() => {
-    x.set(0);
-    opacity.set(1);
-  }, [story?.id, x, opacity]);
+  const { scale, stopArrival } = useCardArrival(story?.id, x, opacity, reduced);
   useEffect(() => () => animations.current.forEach((animation) => animation.stop()), []);
   async function commit(kind: 'skip' | 'save') {
     if (!story || lock.current) return;
+    stopArrival();
     lock.current = true;
     setLocked(true);
     setExitingStory(story);
@@ -109,7 +108,7 @@ function MobileDeck() {
               role="link"
               tabIndex={locked ? -1 : 0}
               aria-label={`Read ${story.title}`}
-              style={{ x, rotate: rotation, opacity }}
+              style={{ x, rotate: rotation, opacity, scale }}
               onPointerDown={swipe.onPointerDown}
               onPointerMove={swipe.onPointerMove}
               onPointerUp={swipe.onPointerUp}

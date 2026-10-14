@@ -30,6 +30,7 @@
 - Known limits: no supplied screenshot references, no physical-phone/screen-reader audit or measured 60fps, no production map account, individual photo contributors unverified, large library bundle warning. App remains fictional and device-local.
 - Impeccable context reported that PRODUCT.md lacks its expanded schema stamp; supplied product facts remain preserved. An optional Impeccable init/schema expansion can be done later without blocking implementation.
 ## Next task
+- Next-card arrival now scales gently from 97.5% to full size over 320ms with a 220ms fade, on mobile swipes/actions and desktop browsing. Initial page load stays static; reduced motion uses a short fade only. Incoming motion can be interrupted cleanly by the next action. Swipe/desktop browser checks pass (seven cases, one WebKit touch skip), build and lint pass.
 - Page-level back links now share an unindented alignment style across the full map and Saved collections, lining up with their headings while preserving comfortable click targets.
 - Interactive map now has themed plus/minus zoom controls at the top right, with 44px keyboard-accessible targets and reduced-motion-aware zoom. Controls appear when the map is ready; static Discover preview stays unchanged. Build and lint pass.
 - Snackbar refined with a 22px SVG close icon in a 44px tap target, centered icon alignment, balanced message spacing, and a subtle hover/focus treatment. Underline remains only on Undo; dismissal has no underline. Build and lint pass.
