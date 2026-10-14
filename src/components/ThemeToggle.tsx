@@ -30,6 +30,7 @@ export function ThemeToggle() {
       }
     >
       {dark ? <Sun size={21} /> : <Moon size={21} />}
+      <span>{dark ? 'Light mode' : 'Dark mode'}</span>
     </button>
   );
 }
