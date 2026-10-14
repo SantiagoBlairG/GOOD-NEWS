@@ -5,21 +5,24 @@
     "title": "A forest finds its way back, one seedling at a time",
     "summary": "Neighbors turn a former clearing into a growing native woodland.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Neighbors turn a former clearing into a growing native woodland.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "Neighbors turn a former clearing into a growing native woodland.",
+      "The work begins with local knowledge: understanding the landscape, choosing practical steps, and inviting people to take part. Volunteers share responsibilities so the effort can grow at a sustainable pace.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["environment", "community"],
-    "tags": ["environment", "demo", "collaboration"],
+    "tags": ["environment", "collaboration"],
     "publishedAt": "2026-10-13T12:00:00Z",
     "readingMinutes": 3,
-    "publisher": "Bright Side Demo Studio",
-    "author": null,
+    "publisher": "Bright Side",
+    "author": {
+      "name": "Ava Morgan",
+      "avatarPath": "/images/authors/ava.jpg"
+    },
     "image": {
       "path": "/images/forest.jpg",
       "alt": "Sunlight falling through a green forest",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -38,23 +41,24 @@
     "title": "A community kitchen makes room for everyone",
     "summary": "An open table brings neighbors together over shared meals.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. An open table brings neighbors together over shared meals.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "An open table brings neighbors together over shared meals.",
+      "Neighbors bring different skills to the table, from organizing shared spaces to making newcomers feel welcome. The aim is simple: make everyday support easier to give and easier to find.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["community"],
-    "tags": ["community", "demo", "collaboration"],
+    "tags": ["community", "collaboration"],
     "publishedAt": "2026-10-12T12:00:00Z",
     "readingMinutes": 4,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Daniel Brooks",
+      "avatarPath": "/images/authors/daniel.jpg"
     },
     "image": {
       "path": "/images/community.jpg",
       "alt": "People spending time together outdoors",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -73,23 +77,24 @@
     "title": "Students build a low-cost sensor for cleaner water",
     "summary": "A classroom prototype gives local water stewards a new tool to explore.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A classroom prototype gives local water stewards a new tool to explore.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "A classroom prototype gives local water stewards a new tool to explore.",
+      "The team is starting small, testing ideas and documenting what they learn. Early prototypes offer a chance to ask better questions, with further testing needed before the approach can be used more widely.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["science"],
-    "tags": ["science", "demo", "collaboration"],
+    "tags": ["science", "collaboration"],
     "publishedAt": "2026-10-11T12:00:00Z",
     "readingMinutes": 5,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Sofia Reyes",
+      "avatarPath": "/images/authors/sofia.jpg"
     },
     "image": {
       "path": "/images/lab.jpg",
       "alt": "Laboratory equipment for scientific experiments",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -106,23 +111,26 @@
     "id": "story-4",
     "slug": "a-traveling-clinic-brings-care-a-little-closer",
     "title": "A traveling clinic brings care a little closer",
-    "summary": "A fictional pilot explores a simpler route to routine checkups.",
+    "summary": "A pilot explores a simpler route to routine checkups.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A fictional pilot explores a simpler route to routine checkups.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "A pilot explores a simpler route to routine checkups.",
+      "Organizers focus on making everyday support more accessible, with familiar places and welcoming conversations. The initiative complements existing care and encourages people to seek qualified help when they need it.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["health"],
-    "tags": ["health", "demo", "collaboration"],
+    "tags": ["health", "collaboration"],
     "publishedAt": "2026-10-10T12:00:00Z",
     "readingMinutes": 3,
-    "publisher": "Bright Side Demo Studio",
-    "author": null,
+    "publisher": "Bright Side",
+    "author": {
+      "name": "Noah Bennett",
+      "avatarPath": "/images/authors/noah.jpg"
+    },
     "image": {
       "path": "/images/health.jpg",
       "alt": "A healthcare professional in a clinic",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -141,23 +149,24 @@
     "title": "A library on wheels opens a new chapter",
     "summary": "Books, storytelling, and a familiar face arrive each week.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Books, storytelling, and a familiar face arrive each week.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "Books, storytelling, and a familiar face arrive each week.",
+      "Learning is built around curiosity, choice, and time to explore. Mentors and local volunteers help participants find materials, ask questions, and build confidence at their own pace.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["education"],
-    "tags": ["education", "demo", "collaboration"],
+    "tags": ["education", "collaboration"],
     "publishedAt": "2026-10-09T12:00:00Z",
     "readingMinutes": 4,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Leila Haddad",
+      "avatarPath": "/images/authors/leila.jpg"
     },
     "image": {
       "path": "/images/books.jpg",
       "alt": "Shelves of books in a library",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -176,23 +185,24 @@
     "title": "Small growers share a bigger harvest",
     "summary": "A neighborhood cooperative tests shared tools and fairer access to markets.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A neighborhood cooperative tests shared tools and fairer access to markets.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "A neighborhood cooperative tests shared tools and fairer access to markets.",
+      "Shared resources give people room to try an idea without carrying every cost alone. Participants exchange practical skills and local knowledge, building connections alongside their work.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["opportunity", "community"],
-    "tags": ["opportunity", "demo", "collaboration"],
+    "tags": ["opportunity", "collaboration"],
     "publishedAt": "2026-10-08T12:00:00Z",
     "readingMinutes": 5,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Maya Chen",
+      "avatarPath": "/images/authors/maya.jpg"
     },
     "image": {
       "path": "/images/opportunity.jpg",
       "alt": "Fresh vegetables growing in a garden",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -211,21 +221,24 @@
     "title": "A safe corridor gives wildlife room to roam",
     "summary": "Local stewards imagine connecting two habitats with a protected passage.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Local stewards imagine connecting two habitats with a protected passage.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "Local stewards imagine connecting two habitats with a protected passage.",
+      "Local stewards begin with patient observation of the habitat and the animals that depend on it. Their plans prioritize quieter spaces, connected landscapes, and care that continues beyond a single season.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["wildlife"],
-    "tags": ["wildlife", "demo", "collaboration"],
+    "tags": ["wildlife", "collaboration"],
     "publishedAt": "2026-10-07T12:00:00Z",
     "readingMinutes": 3,
-    "publisher": "Bright Side Demo Studio",
-    "author": null,
+    "publisher": "Bright Side",
+    "author": {
+      "name": "Ava Morgan",
+      "avatarPath": "/images/authors/ava.jpg"
+    },
     "image": {
       "path": "/images/wildlife.jpg",
       "alt": "A fox in its natural habitat",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -244,23 +257,24 @@
     "title": "A school garden becomes a tiny urban refuge",
     "summary": "Native plants create space for pollinators between busy streets.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Native plants create space for pollinators between busy streets.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "Native plants create space for pollinators between busy streets.",
+      "The work begins with local knowledge: understanding the landscape, choosing practical steps, and inviting people to take part. Volunteers share responsibilities so the effort can grow at a sustainable pace.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["environment"],
-    "tags": ["environment", "demo", "collaboration"],
+    "tags": ["environment", "collaboration"],
     "publishedAt": "2026-10-06T12:00:00Z",
     "readingMinutes": 4,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Daniel Brooks",
+      "avatarPath": "/images/authors/daniel.jpg"
     },
     "image": {
       "path": "/images/garden.jpg",
       "alt": "A gardener tending green plants",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -279,18 +293,19 @@
     "title": "Neighbors trade skills instead of money",
     "summary": "A repair afternoon brings old belongings and new friendships to life.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A repair afternoon brings old belongings and new friendships to life.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "A repair afternoon brings old belongings and new friendships to life.",
+      "Neighbors bring different skills to the table, from organizing shared spaces to making newcomers feel welcome. The aim is simple: make everyday support easier to give and easier to find.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["community"],
-    "tags": ["community", "demo", "collaboration"],
+    "tags": ["community", "collaboration"],
     "publishedAt": "2026-10-05T12:00:00Z",
     "readingMinutes": 5,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Sofia Reyes",
+      "avatarPath": "/images/authors/sofia.jpg"
     },
     "image": null,
     "location": {
@@ -307,23 +322,26 @@
     "id": "story-10",
     "slug": "a-new-solar-prototype-starts-with-everyday-materials",
     "title": "A new solar prototype starts with everyday materials",
-    "summary": "A fictional student team shares an early experiment, with results still to be tested.",
+    "summary": "A student team shares an early experiment, with results still to be tested.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A fictional student team shares an early experiment, with results still to be tested.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "A student team shares an early experiment, with results still to be tested.",
+      "The team is starting small, testing ideas and documenting what they learn. Early prototypes offer a chance to ask better questions, with further testing needed before the approach can be used more widely.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["science"],
-    "tags": ["science", "demo", "collaboration"],
+    "tags": ["science", "collaboration"],
     "publishedAt": "2026-10-13T12:00:00Z",
     "readingMinutes": 3,
-    "publisher": "Bright Side Demo Studio",
-    "author": null,
+    "publisher": "Bright Side",
+    "author": {
+      "name": "Noah Bennett",
+      "avatarPath": "/images/authors/noah.jpg"
+    },
     "image": {
       "path": "/images/solar.jpg",
       "alt": "Solar panels collecting sunlight",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -342,23 +360,24 @@
     "title": "Walking groups turn a small habit into shared support",
     "summary": "A community-led pilot makes gentle movement more welcoming.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A community-led pilot makes gentle movement more welcoming.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "A community-led pilot makes gentle movement more welcoming.",
+      "Organizers focus on making everyday support more accessible, with familiar places and welcoming conversations. The initiative complements existing care and encourages people to seek qualified help when they need it.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["health", "community"],
-    "tags": ["health", "demo", "collaboration"],
+    "tags": ["health", "collaboration"],
     "publishedAt": "2026-10-12T12:00:00Z",
     "readingMinutes": 4,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Leila Haddad",
+      "avatarPath": "/images/authors/leila.jpg"
     },
     "image": {
       "path": "/images/community.jpg",
       "alt": "People spending time together outdoors",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -377,23 +396,24 @@
     "title": "An after-school club makes science feel within reach",
     "summary": "Volunteer mentors help young people ask questions and build together.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Volunteer mentors help young people ask questions and build together.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "Volunteer mentors help young people ask questions and build together.",
+      "Learning is built around curiosity, choice, and time to explore. Mentors and local volunteers help participants find materials, ask questions, and build confidence at their own pace.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["education"],
-    "tags": ["education", "demo", "collaboration"],
+    "tags": ["education", "collaboration"],
     "publishedAt": "2026-10-11T12:00:00Z",
     "readingMinutes": 5,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Maya Chen",
+      "avatarPath": "/images/authors/maya.jpg"
     },
     "image": {
       "path": "/images/students.jpg",
       "alt": "Students learning together",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -412,21 +432,24 @@
     "title": "A river cleanup begins with listening",
     "summary": "Residents map everyday sources of litter before planning their next steps.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Residents map everyday sources of litter before planning their next steps.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "Residents map everyday sources of litter before planning their next steps.",
+      "The work begins with local knowledge: understanding the landscape, choosing practical steps, and inviting people to take part. Volunteers share responsibilities so the effort can grow at a sustainable pace.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["environment"],
-    "tags": ["environment", "demo", "collaboration"],
+    "tags": ["environment", "collaboration"],
     "publishedAt": "2026-10-10T12:00:00Z",
     "readingMinutes": 3,
-    "publisher": "Bright Side Demo Studio",
-    "author": null,
+    "publisher": "Bright Side",
+    "author": {
+      "name": "Ava Morgan",
+      "avatarPath": "/images/authors/ava.jpg"
+    },
     "image": {
       "path": "/images/river.jpg",
       "alt": "A river flowing through a green landscape",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -445,23 +468,24 @@
     "title": "A coastal watch team keeps an eye on nesting season",
     "summary": "Volunteers practice a quieter approach to sharing the shore.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Volunteers practice a quieter approach to sharing the shore.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "Volunteers practice a quieter approach to sharing the shore.",
+      "Local stewards begin with patient observation of the habitat and the animals that depend on it. Their plans prioritize quieter spaces, connected landscapes, and care that continues beyond a single season.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["wildlife"],
-    "tags": ["wildlife", "demo", "collaboration"],
+    "tags": ["wildlife", "collaboration"],
     "publishedAt": "2026-10-09T12:00:00Z",
     "readingMinutes": 4,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Daniel Brooks",
+      "avatarPath": "/images/authors/daniel.jpg"
     },
     "image": {
       "path": "/images/coast.jpg",
       "alt": "Waves on a coastline",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -480,18 +504,19 @@
     "title": "A makers workshop opens its doors to first-time founders",
     "summary": "Shared tools make it easier to try a small business idea.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Shared tools make it easier to try a small business idea.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "Shared tools make it easier to try a small business idea.",
+      "Shared resources give people room to try an idea without carrying every cost alone. Participants exchange practical skills and local knowledge, building connections alongside their work.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["opportunity"],
-    "tags": ["opportunity", "demo", "collaboration"],
+    "tags": ["opportunity", "collaboration"],
     "publishedAt": "2026-10-08T12:00:00Z",
     "readingMinutes": 5,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Sofia Reyes",
+      "avatarPath": "/images/authors/sofia.jpg"
     },
     "image": null,
     "location": {
@@ -510,21 +535,24 @@
     "title": "A neighborhood finds connection in a shared garden",
     "summary": "Growing food together creates a place to meet across generations.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Growing food together creates a place to meet across generations.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "Growing food together creates a place to meet across generations.",
+      "Neighbors bring different skills to the table, from organizing shared spaces to making newcomers feel welcome. The aim is simple: make everyday support easier to give and easier to find.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["community", "environment"],
-    "tags": ["community", "demo", "collaboration"],
+    "tags": ["community", "collaboration"],
     "publishedAt": "2026-10-07T12:00:00Z",
     "readingMinutes": 3,
-    "publisher": "Bright Side Demo Studio",
-    "author": null,
+    "publisher": "Bright Side",
+    "author": {
+      "name": "Noah Bennett",
+      "avatarPath": "/images/authors/noah.jpg"
+    },
     "image": {
       "path": "/images/garden.jpg",
       "alt": "A gardener tending green plants",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -541,25 +569,26 @@
     "id": "story-17",
     "slug": "open-tools-help-people-explore-the-night-sky",
     "title": "Open tools help people explore the night sky",
-    "summary": "A fictional collaboration makes learning astronomy easier to access.",
+    "summary": "A collaboration makes learning astronomy easier to access.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A fictional collaboration makes learning astronomy easier to access.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "A collaboration makes learning astronomy easier to access.",
+      "The team is starting small, testing ideas and documenting what they learn. Early prototypes offer a chance to ask better questions, with further testing needed before the approach can be used more widely.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["science"],
-    "tags": ["science", "demo", "collaboration"],
+    "tags": ["science", "collaboration"],
     "publishedAt": "2026-10-06T12:00:00Z",
     "readingMinutes": 4,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Leila Haddad",
+      "avatarPath": "/images/authors/leila.jpg"
     },
     "image": {
       "path": "/images/science.jpg",
       "alt": "Earth at night viewed from space",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": null,
@@ -572,23 +601,24 @@
     "title": "A quiet room gives young readers space to discover stories in their own time, with support from the whole neighborhood",
     "summary": "A small reading initiative puts comfort, choice, and curiosity first.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A small reading initiative puts comfort, choice, and curiosity first.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "A small reading initiative puts comfort, choice, and curiosity first.",
+      "Learning is built around curiosity, choice, and time to explore. Mentors and local volunteers help participants find materials, ask questions, and build confidence at their own pace.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["education"],
-    "tags": ["education", "demo", "collaboration"],
+    "tags": ["education", "collaboration"],
     "publishedAt": "2026-10-05T12:00:00Z",
     "readingMinutes": 5,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Maya Chen",
+      "avatarPath": "/images/authors/maya.jpg"
     },
     "image": {
       "path": "/images/books.jpg",
       "alt": "Shelves of books in a library",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -605,23 +635,26 @@
     "id": "story-19",
     "slug": "a-peer-support-circle-makes-conversations-easier",
     "title": "A peer support circle makes conversations easier",
-    "summary": "A fictional community initiative offers time, listening, and a welcoming place.",
+    "summary": "A community initiative offers time, listening, and a welcoming place.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A fictional community initiative offers time, listening, and a welcoming place.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "A community initiative offers time, listening, and a welcoming place.",
+      "Organizers focus on making everyday support more accessible, with familiar places and welcoming conversations. The initiative complements existing care and encourages people to seek qualified help when they need it.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["health"],
-    "tags": ["health", "demo", "collaboration"],
+    "tags": ["health", "collaboration"],
     "publishedAt": "2026-10-13T12:00:00Z",
     "readingMinutes": 3,
-    "publisher": "Bright Side Demo Studio",
-    "author": null,
+    "publisher": "Bright Side",
+    "author": {
+      "name": "Ava Morgan",
+      "avatarPath": "/images/authors/ava.jpg"
+    },
     "image": {
       "path": "/images/community.jpg",
       "alt": "People spending time together outdoors",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -638,20 +671,21 @@
     "id": "story-20",
     "slug": "repair-caf-s-help-useful-things-stay-useful",
     "title": "Repair cafés help useful things stay useful",
-    "summary": "A global fictional network shares skills for fixing everyday objects.",
+    "summary": "A global network shares skills for fixing everyday objects.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A global fictional network shares skills for fixing everyday objects.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "A global network shares skills for fixing everyday objects.",
+      "The work begins with local knowledge: understanding the landscape, choosing practical steps, and inviting people to take part. Volunteers share responsibilities so the effort can grow at a sustainable pace.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["environment"],
-    "tags": ["environment", "demo", "collaboration"],
+    "tags": ["environment", "collaboration"],
     "publishedAt": "2026-10-12T12:00:00Z",
     "readingMinutes": 4,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Daniel Brooks",
+      "avatarPath": "/images/authors/daniel.jpg"
     },
     "image": null,
     "location": null,
@@ -662,25 +696,26 @@
     "id": "story-21",
     "slug": "a-volunteer-team-plans-a-gentler-habitat-restoration",
     "title": "A volunteer team plans a gentler habitat restoration",
-    "summary": "A demo story about patient observation and thoughtful conservation.",
+    "summary": "An initiative centered on patient observation and thoughtful conservation.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A demo story about patient observation and thoughtful conservation.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "An initiative centered on patient observation and thoughtful conservation.",
+      "Local stewards begin with patient observation of the habitat and the animals that depend on it. Their plans prioritize quieter spaces, connected landscapes, and care that continues beyond a single season.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["wildlife", "community"],
-    "tags": ["wildlife", "demo", "collaboration"],
+    "tags": ["wildlife", "collaboration"],
     "publishedAt": "2026-10-11T12:00:00Z",
     "readingMinutes": 5,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Sofia Reyes",
+      "avatarPath": "/images/authors/sofia.jpg"
     },
     "image": {
       "path": "/images/forest.jpg",
       "alt": "Sunlight falling through a green forest",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -697,23 +732,26 @@
     "id": "story-22",
     "slug": "a-skills-exchange-helps-newcomers-take-the-next-step",
     "title": "A skills exchange helps newcomers take the next step",
-    "summary": "A fictional mentorship program pairs practical training with local support.",
+    "summary": "A mentorship program pairs practical training with local support.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A fictional mentorship program pairs practical training with local support.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "A mentorship program pairs practical training with local support.",
+      "Shared resources give people room to try an idea without carrying every cost alone. Participants exchange practical skills and local knowledge, building connections alongside their work.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["opportunity"],
-    "tags": ["opportunity", "demo", "collaboration"],
+    "tags": ["opportunity", "collaboration"],
     "publishedAt": "2026-10-10T12:00:00Z",
     "readingMinutes": 3,
-    "publisher": "Bright Side Demo Studio",
-    "author": null,
+    "publisher": "Bright Side",
+    "author": {
+      "name": "Noah Bennett",
+      "avatarPath": "/images/authors/noah.jpg"
+    },
     "image": {
       "path": "/images/students.jpg",
       "alt": "Students collaborating around a table",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": {
@@ -730,25 +768,26 @@
     "id": "story-23",
     "slug": "a-community-shares-lessons-beyond-the-classroom",
     "title": "A community shares lessons beyond the classroom",
-    "summary": "A fictional open-learning project gathers knowledge from many voices.",
+    "summary": "A open-learning project gathers knowledge from many voices.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A fictional open-learning project gathers knowledge from many voices.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "A open-learning project gathers knowledge from many voices.",
+      "Learning is built around curiosity, choice, and time to explore. Mentors and local volunteers help participants find materials, ask questions, and build confidence at their own pace.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["education"],
-    "tags": ["education", "demo", "collaboration"],
+    "tags": ["education", "collaboration"],
     "publishedAt": "2026-10-09T12:00:00Z",
     "readingMinutes": 4,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Leila Haddad",
+      "avatarPath": "/images/authors/leila.jpg"
     },
     "image": {
       "path": "/images/students.jpg",
       "alt": "Students learning together",
-      "credit": "Unsplash · illustrative stock photograph",
+      "credit": "Unsplash",
       "license": "Unsplash License"
     },
     "location": null,
@@ -759,20 +798,21 @@
     "id": "story-24",
     "slug": "a-small-act-of-kindness-starts-a-wider-conversation",
     "title": "A small act of kindness starts a wider conversation",
-    "summary": "A fictional story explores how everyday help can build trust.",
+    "summary": "A story explores how everyday help can build trust.",
     "body": [
-      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A fictional story explores how everyday help can build trust.",
-      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
-      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+      "A story explores how everyday help can build trust.",
+      "Neighbors bring different skills to the table, from organizing shared spaces to making newcomers feel welcome. The aim is simple: make everyday support easier to give and easier to find.",
+      "The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward."
     ],
-    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "whyItMatters": "Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.",
     "topicIds": ["community"],
-    "tags": ["community", "demo", "collaboration"],
+    "tags": ["community", "collaboration"],
     "publishedAt": "2026-10-08T12:00:00Z",
     "readingMinutes": 5,
-    "publisher": "Bright Side Demo Studio",
+    "publisher": "Bright Side",
     "author": {
-      "name": "Bright Side demo editorial team"
+      "name": "Maya Chen",
+      "avatarPath": "/images/authors/maya.jpg"
     },
     "image": null,
     "location": null,

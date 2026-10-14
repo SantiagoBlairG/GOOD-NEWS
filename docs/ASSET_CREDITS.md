@@ -21,3 +21,16 @@ Photos are illustrative stock images, not photographs of the fictional events. D
 Retrieve original bytes at `https://images.unsplash.com/<identifier>`. Individual contributor names have not been verified; no photographer name is invented. Contributor-level attribution should be completed before production content.
 
 Manrope is locally bundled from @fontsource/manrope, SIL Open Font License 1.1. The license is included in the installed package. Lucide icons use the ISC license. shadcn-style Button and Radix Dialog composition follow the MIT-licensed shadcn UI architecture and are customized to the plan.
+
+## Mock author portraits
+
+Author names are invented for the prototype, with locally downloaded stock portraits under the Unsplash License. The names do not identify the real models or photographers and do not claim real reporting credentials.
+
+| Local file | Source identifier |
+|---|---|
+| authors/ava.jpg | photo-1494790108377-be9c29b29330 |
+| authors/daniel.jpg | photo-1500648767791-00dcc994a43e |
+| authors/sofia.jpg | photo-1534528741775-53994a69daeb |
+| authors/noah.jpg | photo-1506794778202-cad84cf45f1d |
+| authors/leila.jpg | photo-1531123897727-8f129e1688ce |
+| authors/maya.jpg | photo-1517841905240-472988babdf9 |

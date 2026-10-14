@@ -145,3 +145,7 @@ Owner-requested refinement: article routes omit the app header, logo, and demo p
 ## Map visual update
 
 The owner's supplied map is the visual reference: white oceans, green country fills ranging from pale chartreuse to deep forest green, and fine pale country borders. No multicolor geography, background place labels, or graticules. Both map surfaces use the shared greenMapStyle transformation; country colors are decorative and encode no data. Story markers and clusters remain interactive overlays.
+
+## Editorial presentation update
+
+Owner instructions supersede the earlier demo-label contract: no fictional/demo pills or disclaimer copy in product screens, article prose, or sharing text. Byline pairs a 48px round local portrait with a named mock author and Bright Side publisher. Internal mock-content provenance and stock-asset credits remain in development records.

@@ -20,7 +20,9 @@ export const storySchema = z.object({
   publishedAt: z.iso.datetime(),
   readingMinutes: z.number().int().positive(),
   publisher: z.string(),
-  author: z.object({ name: z.string() }).nullable(),
+  author: z
+    .object({ name: z.string(), avatarPath: z.string().startsWith('/images/authors/').optional() })
+    .nullable(),
   image: z
     .object({
       path: z.string().startsWith('/images/'),

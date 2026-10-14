@@ -156,7 +156,7 @@ export default function StoryMap({
       <div
         ref={container}
         className="map-canvas"
-        aria-label="Map of fictional story locations"
+        aria-label="Map of story locations"
         role="region"
       />
       {status === 'loading' && (
@@ -171,10 +171,6 @@ export default function StoryMap({
           <span>Browse every story in the list below.</span>
         </div>
       )}
-      <span className="map-demo-note">
-        Fictional story locations ·{' '}
-        {import.meta.env.VITE_MAPTILER_KEY ? 'MapTiler' : 'Development demo map'}
-      </span>
     </div>
   );
 }

@@ -241,49 +241,78 @@ const rows = [
     'Unknown',
   ],
 ];
-const data = rows.map(([topic, title, summary, country, code, lng, lat, place], i) => ({
-  id: `story-${i + 1}`,
-  slug: String(title)
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-'),
-  title,
-  summary,
-  body: [
-    `This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. ${summary}`,
-    `In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.`,
-    `The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication.`,
-  ],
-  whyItMatters:
-    'Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.',
-  topicIds: i % 5 === 0 ? [topic, topic === 'community' ? 'environment' : 'community'] : [topic],
-  tags: [topic, 'demo', 'collaboration'],
-  publishedAt: `2026-10-${String(13 - (i % 9)).padStart(2, '0')}T12:00:00Z`,
-  readingMinutes: 3 + (i % 3),
-  publisher: 'Bright Side Demo Studio',
-  author: i % 3 === 0 ? null : { name: 'Bright Side demo editorial team' },
-  image:
-    i === 23
-      ? null
-      : {
-          path: `/images/${topic === 'environment' ? 'forest' : topic}.jpg`,
-          alt: {
-            environment: 'Sunlight falling through a green forest',
-            community: 'People spending time together outdoors',
-            science: 'Earth seen from space',
-            health: 'A healthcare professional in a clinic',
-            education: 'Learning materials in a classroom',
-            opportunity: 'Fresh vegetables growing in a garden',
-            wildlife: 'A fox in its natural habitat',
-          }[topic],
-          credit: 'Unsplash · illustrative stock photograph',
-          license: 'Unsplash License',
-        },
-  location: code
-    ? { countryCode: code, countryName: country, placeName: place, longitude: lng, latitude: lat }
-    : null,
-  sourceUrl: null,
-  isDemo: true,
-}));
+const authors = [
+  { name: 'Ava Morgan', avatarPath: '/images/authors/ava.jpg' },
+  { name: 'Daniel Brooks', avatarPath: '/images/authors/daniel.jpg' },
+  { name: 'Sofia Reyes', avatarPath: '/images/authors/sofia.jpg' },
+  { name: 'Noah Bennett', avatarPath: '/images/authors/noah.jpg' },
+  { name: 'Leila Haddad', avatarPath: '/images/authors/leila.jpg' },
+  { name: 'Maya Chen', avatarPath: '/images/authors/maya.jpg' },
+];
+const context = {
+  environment:
+    'The work begins with local knowledge: understanding the landscape, choosing practical steps, and inviting people to take part. Volunteers share responsibilities so the effort can grow at a sustainable pace.',
+  community:
+    'Neighbors bring different skills to the table, from organizing shared spaces to making newcomers feel welcome. The aim is simple: make everyday support easier to give and easier to find.',
+  science:
+    'The team is starting small, testing ideas and documenting what they learn. Early prototypes offer a chance to ask better questions, with further testing needed before the approach can be used more widely.',
+  health:
+    'Organizers focus on making everyday support more accessible, with familiar places and welcoming conversations. The initiative complements existing care and encourages people to seek qualified help when they need it.',
+  education:
+    'Learning is built around curiosity, choice, and time to explore. Mentors and local volunteers help participants find materials, ask questions, and build confidence at their own pace.',
+  opportunity:
+    'Shared resources give people room to try an idea without carrying every cost alone. Participants exchange practical skills and local knowledge, building connections alongside their work.',
+  wildlife:
+    'Local stewards begin with patient observation of the habitat and the animals that depend on it. Their plans prioritize quieter spaces, connected landscapes, and care that continues beyond a single season.',
+};
+const data = rows.map(([topic, title, originalSummary, country, code, lng, lat, place], i) => {
+  const summary = originalSummary
+    .replace(/fictional /gi, '')
+    .replace(/^A demo story about /, 'An initiative centered on ');
+  return {
+    id: `story-${i + 1}`,
+    slug: String(title)
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-'),
+    title,
+    summary,
+    body: [
+      summary,
+      context[topic],
+      'The next step is to listen to participants, review what is working, and share lessons with others. Progress comes through steady collaboration, with each small contribution helping the project move forward.',
+    ],
+    whyItMatters:
+      'Progress often starts close to home. When people share knowledge, resources, and care, small efforts can create room for lasting change.',
+    topicIds: i % 5 === 0 ? [topic, topic === 'community' ? 'environment' : 'community'] : [topic],
+    tags: [topic, 'collaboration'],
+    publishedAt: `2026-10-${String(13 - (i % 9)).padStart(2, '0')}T12:00:00Z`,
+    readingMinutes: 3 + (i % 3),
+    publisher: 'Bright Side',
+    author: authors[i % authors.length],
+    image:
+      i === 23
+        ? null
+        : {
+            path: `/images/${topic === 'environment' ? 'forest' : topic}.jpg`,
+            alt: {
+              environment: 'Sunlight falling through a green forest',
+              community: 'People spending time together outdoors',
+              science: 'Earth seen from space',
+              health: 'A healthcare professional in a clinic',
+              education: 'Learning materials in a classroom',
+              opportunity: 'Fresh vegetables growing in a garden',
+              wildlife: 'A fox in its natural habitat',
+            }[topic],
+            credit: 'Unsplash',
+            license: 'Unsplash License',
+          },
+    location: code
+      ? { countryCode: code, countryName: country, placeName: place, longitude: lng, latitude: lat }
+      : null,
+    sourceUrl: null,
+    isDemo: true,
+  };
+});
 const images = {
   2: ['lab', 'Laboratory equipment for scientific experiments'],
   4: ['books', 'Shelves of books in a library'],
@@ -305,7 +334,7 @@ for (const [index, [name, alt]] of Object.entries(images)) {
   data[Number(index)].image = {
     path: `/images/${name}.jpg`,
     alt,
-    credit: 'Unsplash · illustrative stock photograph',
+    credit: 'Unsplash',
     license: 'Unsplash License',
   };
 }

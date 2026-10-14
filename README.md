@@ -2,7 +2,7 @@
 
 A mobile-first, device-local good news demo built from [plan.md](plan.md). Discover a story, swipe left to skip or right to save, tap to read, and revisit your collection.
 
-**All 24 stories are fictional demos.** They are not real news, clinical results, or verified achievements. Stock photographs illustrate themes; they do not depict the imagined events. There are no accounts, backend, ingestion service, or notification subscriptions. Saves and preferences remain in this browser on this device.
+The app uses 24 mock stories and named mock authors with locally hosted stock portrait avatars. There are no accounts, backend, ingestion service, or notification subscriptions. Saves and preferences remain in this browser on this device. At the owner's request, mock-content labels and disclaimer copy are omitted from the product UI.
 
 ## Run locally
 
@@ -48,7 +48,7 @@ The test configuration starts Vite if needed and reuses a server already running
 
 - Deterministic 12-story deck, swipe thresholds and flicks, visible Skip/Save buttons, keyboard alternatives, exact Undo, calm exhaustion and explicit new batches.
 - Immediate, idempotent saving, including navigation during exit animation. Versioned runtime-validated localStorage; malformed or unavailable storage falls back to usable in-memory state with a message.
-- Article details, full titles/body, demo notices, date/source/location/image credit, related stories, origin-aware Back, native share and copy/selectable URL fallback.
+- Article details, full titles/body, author names and portrait avatars, date/source/location/image credit, related stories, origin-aware Back, native share and copy/selectable URL fallback.
 - Discover search and topics combine with AND semantics. URL filters survive article navigation. Lazy MapLibre map with grouped coordinates/clusters, location sheet, Map/List alternatives, failure recovery through the list.
 - Newest-first saved stories and automatic multi-topic collections. Unsave offers six-second Undo restoring its original timestamp.
 - Preferred topics for explicit new batches, light/dark/system appearance with light as the default, a header sun/moon toggle, OS and user reduced motion, and confirmed local-data reset.

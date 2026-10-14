@@ -68,7 +68,7 @@ export function StoryRow({ story, grid = false }: { story: Story; grid?: boolean
       >
         <StoryImage story={story} />
         <div>
-          <span className="label">{topicName(story.topicIds[0])} · Demo</span>
+          <span className="label">{topicName(story.topicIds[0])}</span>
           <h3>{story.title}</h3>
           <p className="metadata">
             {date(story.publishedAt)} · {story.readingMinutes} min read

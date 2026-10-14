@@ -39,7 +39,7 @@ export function Article() {
       if (navigator.share) {
         await navigator.share({
           title: s!.title,
-          text: 'Fictional demo story from Bright Side',
+          text: 'A bright spot from Bright Side',
           url,
         });
         return;
@@ -49,7 +49,7 @@ export function Article() {
     }
     try {
       await navigator.clipboard.writeText(url);
-      notify('Article link copied. This localhost preview is only accessible on this computer.');
+      notify('Article link copied.');
     } catch {
       setFallback(true);
     }
@@ -107,14 +107,20 @@ export function Article() {
           </span>
         </div>
         <div className="publisher">
+          {s.author?.avatarPath && (
+            <img
+              className="author-avatar"
+              src={s.author.avatarPath}
+              alt={s.author.name}
+              width={48}
+              height={48}
+            />
+          )}
           <div>
-            <strong>{s.publisher}</strong>
-            {s.author && <p>{s.author.name}</p>}
+            <strong>{s.author?.name ?? s.publisher}</strong>
+            {s.author && <p>{s.publisher}</p>}
           </div>
         </div>
-        <p className="demo-notice">
-          This story is fictional and created for the app demo. It is not verified news.
-        </p>
         {s.body.map((p) => (
           <p key={p}>{p}</p>
         ))}
@@ -123,9 +129,7 @@ export function Article() {
           <p>{s.whyItMatters}</p>
         </div>
         <p className="image-credit">
-          {s.image
-            ? `Image: ${s.image.credit}. ${s.image.license}. Illustrative stock photo; not the fictional event.`
-            : 'No image available for this demo story.'}
+          {s.image ? `Image: ${s.image.credit}. ${s.image.license}.` : 'No image available.'}
         </p>
         <SaveButton story={s} />
         <h2>More bright spots</h2>
@@ -137,7 +141,7 @@ export function Article() {
         open={shareFallback}
         onOpenChange={setFallback}
         title="Share this bright spot"
-        description="Copy the address below. Localhost preview links work only on this computer."
+        description="Copy the address below to share this story."
       >
         <label htmlFor="share-url">Article URL</label>
         <input

@@ -79,7 +79,6 @@ function Shell() {
           </Link>
           <span className="edition">A little good goes a long way.</span>
           <div className="header-actions">
-            <span className="demo-label">FICTIONAL DEMO</span>
             <ThemeToggle />
           </div>
         </header>

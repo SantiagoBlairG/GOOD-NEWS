@@ -192,7 +192,7 @@ export function Discover({ fullMap = false }: { fullMap?: boolean }) {
           if (!open) setSelected([]);
         }}
         title={selectedStories[0]?.location?.placeName ?? 'Stories at this location'}
-        description="Fictional demo stories at the selected map location."
+        description="Explore stories at the selected map location."
       >
         {selectedStories.map((story) => (
           <StoryRow key={story.id} story={story} />

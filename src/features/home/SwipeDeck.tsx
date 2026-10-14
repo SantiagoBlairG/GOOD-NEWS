@@ -158,7 +158,6 @@ export function SwipeDeck() {
               </motion.span>
               <div className="hero">
                 <StoryImage story={story} loading="eager" />
-                <span className="demo-tag">Demo story</span>
                 <div className="hero-copy">
                   <span className="topic">{topicName(story.topicIds[0])}</span>
                   <h2>{story.title}</h2>

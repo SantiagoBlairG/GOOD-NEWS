@@ -114,7 +114,7 @@ export function Profile() {
         </Button>
       </div>
       <p className="profile-footnote">
-        Bright Side · Fictional demo edition
+        Bright Side
         <br />
         Built for a little perspective, without the endless scroll.
       </p>

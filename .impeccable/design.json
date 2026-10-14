@@ -145,6 +145,11 @@
       "boundaries": "#eef3dc",
       "labels": "Story overlays only",
       "meaning": "Country shades are decorative; no encoded story metrics"
+    },
+    "editorialPresentation": {
+      "content": "Mock editorial content with no product demo labels or disclaimer copy",
+      "byline": "Named mock author, 48px circular local stock avatar, Bright Side publisher",
+      "provenance": "Internal mock-content metadata and developer asset credits retained"
     }
   },
   "components": [
