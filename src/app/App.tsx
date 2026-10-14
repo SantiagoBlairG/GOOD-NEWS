@@ -7,6 +7,7 @@ import { Article } from '../features/stories/Article';
 import { Discover } from '../features/discover/Discover';
 import { Saved } from '../features/saved/Saved';
 import { Profile } from '../features/profile/Profile';
+import { ThemeToggle } from '../components/ThemeToggle';
 
 import { Button } from '../components/ui/button';
 function Missing() {
@@ -76,7 +77,10 @@ function Shell() {
           </span>
         </Link>
         <span className="edition">A little good goes a long way.</span>
-        <span className="demo-label">FICTIONAL DEMO</span>
+        <div className="header-actions">
+          <span className="demo-label">FICTIONAL DEMO</span>
+          <ThemeToggle />
+        </div>
       </header>
       {storageWarning && (
         <p role="status" className="storage-warning">

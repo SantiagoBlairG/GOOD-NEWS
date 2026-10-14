@@ -51,7 +51,7 @@ The test configuration starts Vite if needed and reuses a server already running
 - Article details, full titles/body, demo notices, date/source/location/image credit, related stories, origin-aware Back, native share and copy/selectable URL fallback.
 - Discover search and topics combine with AND semantics. URL filters survive article navigation. Lazy MapLibre map with grouped coordinates/clusters, location sheet, Map/List alternatives, failure recovery through the list.
 - Newest-first saved stories and automatic multi-topic collections. Unsave offers six-second Undo restoring its original timestamp.
-- Preferred topics for explicit new batches, light/dark/system appearance, OS and user reduced motion, and confirmed local-data reset.
+- Preferred topics for explicit new batches, light/dark/system appearance with light as the default, a header sun/moon toggle, OS and user reduced motion, and confirmed local-data reset.
 - Mobile safe areas, responsive grids, centered desktop deck, reserved bottom navigation space, keyboard focus, focus-trapped dialogs with opener restoration, unknown-route and story states.
 
 ## Routes and source

@@ -30,5 +30,6 @@
 - Known limits: no supplied screenshot references, no physical-phone/screen-reader audit or measured 60fps, no production map account, individual photo contributors unverified, large library bundle warning. App remains fictional and device-local.
 - Impeccable context reported that PRODUCT.md lacks its expanded schema stamp; supplied product facts remain preserved. An optional Impeccable init/schema expansion can be done later without blocking implementation.
 ## Next task
+- Appearance update: light is the default for fresh/reset state. A persistent header sun/moon toggle switches light/dark on every route, using the same saved preference as Profile. Existing explicit preferences are retained.
 - Owner reviews the local MVP with `npm run dev`. Incorporate supplied reference screenshots or requested changes when available.
 - Phase 6 remains deferred until owner requests PWA/offline support or verified real news. No deployment, authentication, news ingestion, or subscription was performed.

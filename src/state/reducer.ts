@@ -52,7 +52,7 @@ export function initialState(): State {
   const state: State = {
     version: 1,
     saved: [],
-    preferences: { topics: [], appearance: 'system', reduceMotion: false },
+    preferences: { topics: [], appearance: 'light', reduceMotion: false },
     batch: [],
     cursor: 0,
     history: [],
