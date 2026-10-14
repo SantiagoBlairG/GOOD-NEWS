@@ -1,4 +1,4 @@
-import { useRef, useState, useLayoutEffect, useEffect } from 'react';
+import { useRef, useState, useLayoutEffect, useEffect, useSyncExternalStore } from 'react';
 import { Link } from 'react-router';
 import { motion, useMotionValue, useTransform, animate } from 'motion/react';
 import { Sun, Undo2, X, Bookmark, ArrowUpRight } from 'lucide-react';
@@ -10,7 +10,22 @@ import { Button } from '../../components/ui/button';
 import type { Story } from '../../lib/schemas';
 import { useOpenStory } from '../stories/useOpenStory';
 import { useCardSwipe } from './useCardSwipe';
+import { DesktopDeck } from './DesktopDeck';
+const desktopQuery = () => window.matchMedia('(min-width: 1024px)');
+const subscribeDesktop = (callback: () => void) => {
+  const query = desktopQuery();
+  query.addEventListener('change', callback);
+  return () => query.removeEventListener('change', callback);
+};
 export function SwipeDeck() {
+  const desktop = useSyncExternalStore(
+    subscribeDesktop,
+    () => desktopQuery().matches,
+    () => false,
+  );
+  return desktop ? <DesktopDeck /> : <MobileDeck />;
+}
+function MobileDeck() {
   const { state, dispatch, notify, reduced } = useApp();
   const openStory = useOpenStory();
   const [exitingStory, setExitingStory] = useState<Story | null>(null);

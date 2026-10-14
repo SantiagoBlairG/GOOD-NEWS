@@ -142,14 +142,10 @@ export function Discover({ fullMap = false }: { fullMap?: boolean }) {
       )}
       {fullMap && !list && (
         <>
+          <p className="map-help">Select a green marker to explore its stories.</p>
           <LazyMap>
             <StoryMap stories={filtered} onSelect={setSelected} />
           </LazyMap>
-          <p className="map-help">
-            Select a green marker to explore its stories.{' '}
-            {filtered.filter((s) => !s.location).length} stories have no map location and remain
-            available below.
-          </p>
         </>
       )}
       <div className="results-heading">

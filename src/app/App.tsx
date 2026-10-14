@@ -80,6 +80,14 @@ function Shell() {
             </span>
           </Link>
           <span className="edition">A little good goes a long way.</span>
+          <nav className="desktop-nav" aria-label="Desktop primary">
+            <NavLink to="/" end>
+              Home
+            </NavLink>
+            <NavLink to={'/discover' + discoverSearch.current}>Discover</NavLink>
+            <NavLink to="/saved">Saved</NavLink>
+            <NavLink to="/profile">Profile</NavLink>
+          </nav>
           <div className="header-actions">
             <ThemeToggle />
           </div>

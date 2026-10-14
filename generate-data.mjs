@@ -289,23 +289,20 @@ const data = rows.map(([topic, title, originalSummary, country, code, lng, lat, 
     readingMinutes: 3 + (i % 3),
     publisher: 'Bright Side',
     author: authors[i % authors.length],
-    image:
-      i === 23
-        ? null
-        : {
-            path: `/images/${topic === 'environment' ? 'forest' : topic}.jpg`,
-            alt: {
-              environment: 'Sunlight falling through a green forest',
-              community: 'People spending time together outdoors',
-              science: 'Earth seen from space',
-              health: 'A healthcare professional in a clinic',
-              education: 'Learning materials in a classroom',
-              opportunity: 'Fresh vegetables growing in a garden',
-              wildlife: 'A fox in its natural habitat',
-            }[topic],
-            credit: 'Unsplash',
-            license: 'Unsplash License',
-          },
+    image: {
+      path: `/images/${topic === 'environment' ? 'forest' : topic}.jpg`,
+      alt: {
+        environment: 'Sunlight falling through a green forest',
+        community: 'People spending time together outdoors',
+        science: 'Earth seen from space',
+        health: 'A healthcare professional in a clinic',
+        education: 'Learning materials in a classroom',
+        opportunity: 'Fresh vegetables growing in a garden',
+        wildlife: 'A fox in its natural habitat',
+      }[topic],
+      credit: 'Unsplash',
+      license: 'Unsplash License',
+    },
     location: code
       ? { countryCode: code, countryName: country, placeName: place, longitude: lng, latitude: lat }
       : null,
@@ -317,18 +314,22 @@ const images = {
   2: ['lab', 'Laboratory equipment for scientific experiments'],
   4: ['books', 'Shelves of books in a library'],
   7: ['garden', 'A gardener tending green plants'],
+  8: ['community', 'People spending time together outdoors'],
   9: ['solar', 'Solar panels collecting sunlight'],
   10: ['community', 'People spending time together outdoors'],
   11: ['students', 'Students learning together'],
   12: ['river', 'A river flowing through a green landscape'],
   13: ['coast', 'Waves on a coastline'],
+  14: ['opportunity', 'Fresh vegetables growing in a garden'],
   15: ['garden', 'A gardener tending green plants'],
   16: ['science', 'Earth at night viewed from space'],
   17: ['books', 'Shelves of books in a library'],
   18: ['community', 'People spending time together outdoors'],
+  19: ['community', 'People spending time together outdoors'],
   20: ['forest', 'Sunlight falling through a green forest'],
   21: ['students', 'Students collaborating around a table'],
   22: ['students', 'Students learning together'],
+  23: ['community', 'People spending time together outdoors'],
 };
 for (const [index, [name, alt]] of Object.entries(images)) {
   data[Number(index)].image = {
@@ -338,6 +339,4 @@ for (const [index, [name, alt]] of Object.entries(images)) {
     license: 'Unsplash License',
   };
 }
-// No suitable local photograph: show the designed fallback instead of mismatched imagery.
-for (const index of [8, 14, 19, 23]) data[index].image = null;
 fs.writeFileSync('src/data/stories.json', JSON.stringify(data, null, 2));

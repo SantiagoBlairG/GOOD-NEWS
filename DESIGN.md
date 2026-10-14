@@ -77,6 +77,8 @@ components:
     padding: "10px 15px"
 ---
 
+Desktop adaptation (1024px+): retain Manrope, warm canvas, green accents, and light/dark palettes. Use a 1400px maximum shell with 56px gutters, header pill navigation, a wide featured story and two companion stories in a 1.95:1 editorial split. Previous/next arrows browse independently of saving; drag gestures and shared cover/title transitions remain available. Featured selection survives article navigation. Discover presents larger landscape cards; Saved and map story lists use two columns. Dialogs, including mobile sheets, center on desktop with a 640px width and a short eased arrival. Below 1024px, preserve the existing mobile deck and navigation.
+
 # Design System: Bright Side
 
 ## Overview

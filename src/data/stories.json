@@ -307,7 +307,12 @@
       "name": "Sofia Reyes",
       "avatarPath": "/images/authors/sofia.jpg"
     },
-    "image": null,
+    "image": {
+      "path": "/images/community.jpg",
+      "alt": "People spending time together outdoors",
+      "credit": "Unsplash",
+      "license": "Unsplash License"
+    },
     "location": {
       "countryCode": "PT",
       "countryName": "Portugal",
@@ -518,7 +523,12 @@
       "name": "Sofia Reyes",
       "avatarPath": "/images/authors/sofia.jpg"
     },
-    "image": null,
+    "image": {
+      "path": "/images/opportunity.jpg",
+      "alt": "Fresh vegetables growing in a garden",
+      "credit": "Unsplash",
+      "license": "Unsplash License"
+    },
     "location": {
       "countryCode": "IN",
       "countryName": "India",
@@ -687,7 +697,12 @@
       "name": "Daniel Brooks",
       "avatarPath": "/images/authors/daniel.jpg"
     },
-    "image": null,
+    "image": {
+      "path": "/images/community.jpg",
+      "alt": "People spending time together outdoors",
+      "credit": "Unsplash",
+      "license": "Unsplash License"
+    },
     "location": null,
     "sourceUrl": null,
     "isDemo": true
@@ -814,7 +829,12 @@
       "name": "Maya Chen",
       "avatarPath": "/images/authors/maya.jpg"
     },
-    "image": null,
+    "image": {
+      "path": "/images/community.jpg",
+      "alt": "People spending time together outdoors",
+      "credit": "Unsplash",
+      "license": "Unsplash License"
+    },
     "location": null,
     "sourceUrl": null,
     "isDemo": true
