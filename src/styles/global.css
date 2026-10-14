@@ -403,6 +403,41 @@ section {
   color: var(--green);
   margin-bottom: 25px;
 }
+.saved-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(36px, 6vw, 72px) 20px 56px;
+}
+.saved-empty-icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--selected);
+  color: var(--green);
+  margin-bottom: 24px;
+}
+.saved-empty-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke-width: 1.5;
+}
+.saved-empty h2 {
+  max-width: 26ch;
+  font-size: clamp(24px, 2.4vw, 32px);
+  margin: 0 0 16px;
+}
+.saved-empty p {
+  max-width: 48ch;
+  margin: 0;
+  font-size: 16px;
+  text-wrap: pretty;
+}
+.saved-empty .button {
+  margin-top: 32px;
+}
 .article {
   max-width: none;
   margin: auto;
@@ -667,10 +702,15 @@ section {
   background: var(--text);
   color: var(--canvas);
   border-radius: 18px;
-  padding: 16px 20px;
+  padding: 12px 12px 12px 20px;
   box-shadow: var(--shadow);
   font-size: 13px;
   pointer-events: auto;
+}
+.toast > span {
+  flex: 1;
+  min-width: 0;
+  line-height: 1.5;
 }
 .toast button {
   color: inherit;
@@ -679,8 +719,33 @@ section {
   min-width: 44px;
   min-height: 44px;
   font-weight: 700;
+  flex-shrink: 0;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.toast .toast-undo {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+.toast .toast-close {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  transition: background 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.toast-close svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 2;
+}
+.toast .toast-close:hover {
+  background: color-mix(in srgb, currentColor 12%, transparent);
+}
+.toast button:focus-visible {
+  outline-color: currentColor;
+  outline-offset: 2px;
 }
 .storage-warning {
   max-width: 1050px;
@@ -1187,6 +1252,39 @@ section {
   font-size: 13px;
   max-width: 65ch;
   margin: 20px 0 28px;
+}
+.button.page-back {
+  padding-left: 0;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+}
+.map-zoom-controls {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  gap: 2px;
+  border-radius: 18px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  z-index: 2;
+}
+.map-zoom-controls button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  color: inherit;
+}
+.map-zoom-controls button:hover {
+  background: var(--selected);
+  color: var(--green);
 }
 .map-story-list {
   max-width: 800px;

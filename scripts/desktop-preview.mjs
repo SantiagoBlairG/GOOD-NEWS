@@ -8,6 +8,9 @@ try {
     ['desktop-discover', 1440, 1000, '/discover', false],
     ['desktop-home-compact', 1024, 900, '/', false],
     ['mobile-home-preserved', 390, 844, '/', false],
+    ['saved-empty-desktop', 1440, 1000, '/saved', false],
+    ['saved-empty-tablet', 862, 800, '/saved', false],
+    ['saved-empty-mobile', 390, 844, '/saved', false],
   ]) {
     await page.setViewportSize({ width, height });
     await page.goto('http://127.0.0.1:5173' + route);

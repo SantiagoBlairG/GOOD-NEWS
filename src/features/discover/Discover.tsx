@@ -59,7 +59,7 @@ export function Discover({ fullMap = false }: { fullMap?: boolean }) {
   return (
     <section className="discover">
       {fullMap && (
-        <Button variant="ghost" asChild>
+        <Button variant="ghost" className="page-back" asChild>
           <Link to={'/discover' + suffix}>
             <ArrowLeft size={17} /> Discover
           </Link>

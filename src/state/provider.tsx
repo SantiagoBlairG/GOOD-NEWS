@@ -10,6 +10,7 @@ import {
   type Dispatch,
 } from 'react';
 import { reducer, type State, type Action, initialState } from './reducer';
+import { X } from 'lucide-react';
 import { readStorage, writeStorage } from '../lib/storage';
 type Toast = { message: string; undo?: () => void };
 const subscribeMotion = (callback: () => void) => {
@@ -96,6 +97,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
             <span>{toast.message}</span>
             {toast.undo && (
               <button
+                className="toast-undo"
                 onClick={() => {
                   toast.undo?.();
                   setToast(null);
@@ -104,8 +106,12 @@ export function AppProvider({ children }: { children: ReactNode }) {
                 Undo
               </button>
             )}
-            <button aria-label="Dismiss notification" onClick={() => setToast(null)}>
-              ×
+            <button
+              className="toast-close"
+              aria-label="Dismiss notification"
+              onClick={() => setToast(null)}
+            >
+              <X size={22} aria-hidden="true" />
             </button>
           </div>
         )}

@@ -37,6 +37,8 @@ export function StoryImage({
 }
 export function SaveButton({ story, compact = false }: { story: Story; compact?: boolean }) {
   const { state, dispatch, notify } = useApp();
+  const location = useLocation();
+  const showSnackbar = location.pathname !== '/';
   const saved = state.saved.find((s) => s.id === story.id);
   return (
     <button
@@ -46,10 +48,11 @@ export function SaveButton({ story, compact = false }: { story: Story; compact?:
       onClick={() => {
         if (saved) {
           dispatch({ type: 'unsave', id: story.id });
-          notify('Story removed from Saved.', () => dispatch({ type: 'restore', entry: saved }));
+          if (showSnackbar)
+            notify('Story removed from Saved.', () => dispatch({ type: 'restore', entry: saved }));
         } else {
           dispatch({ type: 'save', id: story.id, at: new Date().toISOString() });
-          notify('Story saved. A little good to come back to.');
+          if (showSnackbar) notify('Story saved. A little good to come back to.');
         }
       }}
     >

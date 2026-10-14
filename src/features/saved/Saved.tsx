@@ -31,7 +31,7 @@ export function Saved() {
   return (
     <section className="saved">
       {topicId && (
-        <Button asChild variant="ghost">
+        <Button asChild variant="ghost" className="page-back">
           <Link to="/saved">
             <ArrowLeft size={17} />
             All saved stories
@@ -76,8 +76,10 @@ export function Saved() {
           ))}
         </div>
       ) : (
-        <div className="empty">
-          <Bookmark />
+        <div className="empty saved-empty">
+          <span className="saved-empty-icon" aria-hidden="true">
+            <Bookmark size={28} />
+          </span>
           <h2>
             {topicId ? 'A little room for more good.' : 'Your next bright spot belongs here.'}
           </h2>

@@ -10,7 +10,7 @@ import { useCardSwipe } from './useCardSwipe';
 
 let rememberedIndex = 0;
 export function DesktopDeck() {
-  const { state, dispatch, notify, reduced } = useApp();
+  const { state, dispatch, reduced } = useApp();
   const [index, setIndex] = useState(rememberedIndex);
   const [locked, setLocked] = useState(false);
   const lock = useRef(false);
@@ -29,7 +29,6 @@ export function DesktopDeck() {
     const next = Math.max(0, Math.min(stories.length - 1, index + direction));
     if (save) {
       dispatch({ type: 'save', id: story.id, at: new Date().toISOString() });
-      notify('Story saved. A little good to come back to.');
     }
     if (next === index) {
       void animate(x, 0, { type: 'spring', stiffness: 350, damping: 30 });

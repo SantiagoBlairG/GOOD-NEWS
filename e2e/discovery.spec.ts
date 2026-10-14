@@ -7,6 +7,7 @@ test.beforeEach(async ({ page }) => {
 test('buttons save once, persist, undo, and restore article origin', async ({ page }) => {
   await page.getByRole('button', { name: 'Save', exact: true }).click();
   await expect(page.getByTestId('swipe-card')).toHaveAttribute('aria-label', /community kitchen/);
+  await expect(page.locator('.toast')).toHaveCount(0);
   await page.reload();
   await expect(page.getByTestId('swipe-card')).toHaveAttribute('aria-label', /community kitchen/);
   await page.getByRole('link', { name: 'Saved', exact: true }).click();
@@ -39,9 +40,21 @@ test('drag is distinct from tap and short drag resets', async ({ page }) => {
   await page.mouse.move(box.x + box.width / 2 + 150, y, { steps: 12 });
   await page.mouse.up();
   await expect(card).toHaveAttribute('aria-label', /community kitchen/);
+  await expect(page.locator('.toast')).toHaveCount(0);
   await expect(page).toHaveURL(/\/$/);
   await page.getByRole('link', { name: 'Saved', exact: true }).click();
   await expect(page.getByRole('heading', { name: /forest finds/ })).toBeVisible();
+});
+
+test('article saves and Saved removals retain snackbar confirmation and undo', async ({ page }) => {
+  await page.getByTestId('swipe-card').click();
+  await page.getByRole('button', { name: 'Save story', exact: true }).first().click();
+  await expect(page.locator('.toast')).toContainText('Story saved.');
+  await page.goto('/saved');
+  await page.getByRole('button', { name: 'Unsave story', exact: true }).click();
+  await expect(page.locator('.toast')).toContainText('Story removed from Saved.');
+  await page.locator('.toast').getByRole('button', { name: 'Undo', exact: true }).click();
+  await expect(page.getByRole('heading', { name: /forest finds/ }).last()).toBeVisible();
 });
 test('final-card Undo works and keyboard discovery works', async ({ page }) => {
   for (let i = 0; i < 12; i++) {

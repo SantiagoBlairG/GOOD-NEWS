@@ -56,9 +56,6 @@ function MobileDeck() {
     setLocked(true);
     setExitingStory(story);
     dispatch({ type: 'advance', kind, id: story.id, at: new Date().toISOString() });
-    notify(
-      `${kind === 'save' ? 'Saved' : 'Skipped'}. ${repository.get(state.batch[state.cursor + 1] ?? '')?.title ?? 'This batch is complete.'}`,
-    );
     try {
       animations.current.forEach((animation) => animation.stop());
       const width = card.current?.offsetWidth ?? 350;

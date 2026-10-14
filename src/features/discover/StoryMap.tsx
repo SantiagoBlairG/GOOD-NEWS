@@ -4,7 +4,7 @@ import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Story } from '../../lib/schemas';
 import { storyGeoJSON } from './filter';
-import { MapPin } from 'lucide-react';
+import { MapPin, Plus, Minus } from 'lucide-react';
 import { useApp } from '../../state/provider';
 import { greenMapStyle } from './mapStyle';
 maplibregl.setWorkerUrl(workerUrl);
@@ -159,6 +159,26 @@ export default function StoryMap({
         aria-label="Map of story locations"
         role="region"
       />
+      {!preview && status === 'ready' && (
+        <div className="map-zoom-controls" role="group" aria-label="Map zoom">
+          <button
+            type="button"
+            aria-label="Zoom in"
+            title="Zoom in"
+            onClick={() => map.current?.zoomIn({ duration: reduced ? 0 : 250 })}
+          >
+            <Plus size={22} aria-hidden="true" />
+          </button>
+          <button
+            type="button"
+            aria-label="Zoom out"
+            title="Zoom out"
+            onClick={() => map.current?.zoomOut({ duration: reduced ? 0 : 250 })}
+          >
+            <Minus size={22} aria-hidden="true" />
+          </button>
+        </div>
+      )}
       {status === 'loading' && (
         <div className="map-status" role="status">
           Opening a world of good…
