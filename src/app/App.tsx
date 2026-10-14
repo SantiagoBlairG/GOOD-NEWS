@@ -90,7 +90,12 @@ function Shell() {
           {storageWarning}
         </p>
       )}
-      <main id="main-content" tabIndex={-1} className={article ? 'article-main' : ''}>
+      <main
+        id="main-content"
+        data-route={location.pathname + location.search}
+        tabIndex={-1}
+        className={article ? 'article-main' : location.pathname === '/' ? 'home-main' : ''}
+      >
         <Routes>
           <Route path="/" element={<SwipeDeck />} />
           <Route path="/discover" element={<Discover />} />

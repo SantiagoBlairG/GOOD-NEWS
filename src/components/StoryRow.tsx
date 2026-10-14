@@ -67,6 +67,7 @@ export function StoryRow({ story, grid = false }: { story: Story; grid?: boolean
         to={'/story/' + story.id}
         state={{ from: location.pathname + location.search }}
         className="story-row-link"
+        data-story-link={story.id}
         onClick={(event) => {
           if (
             event.defaultPrevented ||

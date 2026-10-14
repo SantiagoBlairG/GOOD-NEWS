@@ -6,8 +6,10 @@ import { SaveButton, StoryImage, StoryRow } from '../../components/StoryRow';
 import { Button } from '../../components/ui/button';
 import { Modal } from '../../components/ui/dialog';
 import { useApp } from '../../state/provider';
+import { useBackStory } from './useOpenStory';
 export function Article() {
   const { storyId } = useParams();
+  const back = useBackStory(storyId ?? '');
   const s = repository.get(storyId ?? '');
   const location = useLocation();
   const navigate = useNavigate();
@@ -70,14 +72,7 @@ export function Article() {
       <div className="hero article-hero">
         <StoryImage story={s} loading="eager" className="article-cover" />
         <div className="article-toolbar">
-          <Button
-            variant="secondary"
-            onClick={() => {
-              const origin = location.state?.from;
-              if (typeof origin === 'string' && origin.startsWith('/')) navigate(-1);
-              else navigate('/');
-            }}
-          >
+          <Button variant="secondary" onClick={() => void back()}>
             <ArrowLeft size={18} />
             Back
           </Button>

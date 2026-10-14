@@ -147,6 +147,20 @@ section {
   margin: 10px 0 0;
   font-size: 14px;
 }
+.home-main {
+  padding-top: 20px;
+}
+@media (max-width: 767px) {
+  main.home-main {
+    padding-top: 12px;
+  }
+  .home-heading h1 {
+    margin-bottom: 6px;
+  }
+  .home-heading p {
+    margin-top: 6px;
+  }
+}
 .heading-sun {
   width: 60px;
   height: 60px;
@@ -736,7 +750,8 @@ section {
 [data-story-opening='true'] {
   view-transition-name: article-cover;
 }
-[data-article-transition='opening'] .article-hero {
+[data-article-transition='opening'] .article-hero,
+[data-article-transition='closing'] .article-hero {
   view-transition-name: article-cover;
 }
 [data-story-opening-title='true'] {
@@ -749,13 +764,16 @@ section {
 ::view-transition-old(article-title) {
   animation: article-scene-out 120ms ease-out both;
 }
-[data-article-transition='opening'] .article-hero .hero-copy {
+[data-article-transition='opening'] .article-hero .hero-copy,
+[data-article-transition='closing'] .article-hero .hero-copy {
   view-transition-name: article-title;
 }
-[data-article-transition='opening'] .article .reading {
+[data-article-transition='opening'] .article .reading,
+[data-article-transition='closing'] .article .reading {
   view-transition-name: article-reading;
 }
-[data-article-transition='opening'] .article-toolbar {
+[data-article-transition='opening'] .article-toolbar,
+[data-article-transition='closing'] .article-toolbar {
   view-transition-name: article-controls;
 }
 ::view-transition {
@@ -788,6 +806,25 @@ section {
 }
 ::view-transition-new(article-controls) {
   animation: article-scene-in 240ms 180ms ease-out both;
+}
+[data-article-transition='returning']::view-transition-group(article-cover),
+[data-article-transition='returning']::view-transition-group(article-title) {
+  animation-duration: 460ms;
+}
+[data-article-transition='returning']::view-transition-old(article-reading) {
+  animation: article-sheet-out 180ms ease-out both;
+}
+[data-article-transition='returning']::view-transition-old(article-controls) {
+  animation: article-scene-out 120ms ease-out both;
+}
+[data-article-transition='returning']::view-transition-new(article-title) {
+  animation: article-scene-in 220ms 80ms ease-out both;
+}
+@keyframes article-sheet-out {
+  to {
+    opacity: 0;
+    transform: translateY(16px);
+  }
 }
 @keyframes article-scene-out {
   to {

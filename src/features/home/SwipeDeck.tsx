@@ -70,10 +70,7 @@ export function SwipeDeck() {
     <div className="home">
       <header className="home-heading">
         <div>
-          <h1>
-            A little good.
-            <br />A brighter world.
-          </h1>
+          <h1>A brighter world</h1>
           <p>Your daily dose of perspective.</p>
         </div>
         <Sun className="heading-sun" />
@@ -96,6 +93,7 @@ export function SwipeDeck() {
               key={story.id}
               className="story-card"
               data-testid="swipe-card"
+              data-story-link={story.id}
               role="link"
               tabIndex={locked ? -1 : 0}
               aria-label={`Read ${story.title}`}
