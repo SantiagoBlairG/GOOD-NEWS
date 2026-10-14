@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-14T15:18:35.906Z",
+  "title": "Design System: Bright Side",
+  "extensions": {
+    "colorMeta": {
+      "accent": {
+        "role": "primary",
+        "displayName": "Vivid action green"
+      },
+      "green": {
+        "role": "primary",
+        "displayName": "Deep label green"
+      },
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Warm off-white"
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Navy ink"
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Screen headings; component-specific sizes apply."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Story and explanatory copy; article measure 68ch."
+      }
+    },
+    "shadows": [
+      {
+        "name": "surface",
+        "value": "0 16px 40px -15px #14203326",
+        "purpose": "Story cards, deck layers, toast."
+      },
+      {
+        "name": "surface-dark",
+        "value": "0 16px 40px -15px #0008",
+        "purpose": "Dark appearance semantic shadow override."
+      },
+      {
+        "name": "secondary-button",
+        "value": "0 3px 14px -6px #14203330",
+        "purpose": "Secondary actions."
+      },
+      {
+        "name": "swipe-action",
+        "value": "0 6px 22px -9px #14203330",
+        "purpose": "Circular swipe controls."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-transition",
+        "value": "0.18s cubic-bezier(0.2, 0.8, 0.2, 1)",
+        "purpose": "Button background/transform and preference switch."
+      },
+      {
+        "name": "deck-exit",
+        "value": "0.28s",
+        "purpose": "Normal exit translation and rotation."
+      },
+      {
+        "name": "deck-exit-reduced",
+        "value": "0.08s",
+        "purpose": "Opacity only, translation/rotation disabled."
+      },
+      {
+        "name": "map-cluster-navigation",
+        "value": "250ms",
+        "purpose": "Effective reduced motion changes duration to zero live."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "767px",
+        "condition": "max-width"
+      },
+      {
+        "name": "compact",
+        "value": "360px",
+        "condition": "max-width"
+      }
+    ],
+    "accessibility": {
+      "touchTarget": "44px minimum",
+      "focus": "3px solid var(--green), offset 4px",
+      "reducedMotion": "OS preference OR app preference; CSS animations/transitions disabled and scroll auto. Map cluster duration zero via live ref."
+    },
+    "layout": {
+      "deckMaxWidth": "460px",
+      "mainMaxWidth": "1100px",
+      "readingMaxWidth": "68ch",
+      "articleMaxWidth": "800px",
+      "articleHeroPaddingTop": "80px",
+      "bottomReserve": "calc(var(--nav-height, 90px) + 40px)",
+      "toastBottom": "calc(var(--nav-height, 90px) + 12px)",
+      "navHeight": "ResizeObserver-measured; safe-area included"
+    },
+    "behavior": {
+      "operateRoutes": [
+        "/",
+        "/discover",
+        "/discover/map",
+        "/saved",
+        "/saved/topic/:topicId",
+        "/profile"
+      ],
+      "readRoute": "/story/:storyId",
+      "navigation": "Fixed tabs on Operate routes; absent in Read mode.",
+      "scroll": "History location-key restoration; primary pathname/query restoration; new article starts at top.",
+      "persistence": "Versioned validated localStorage for saves, preferences, deck progress; in-memory fallback with warning."
+    },
+    "provenance": {
+      "authority": "plan.md written contract",
+      "sourceFiles": [
+        "src/styles/global.css",
+        "src/main.tsx",
+        "src/app/App.tsx",
+        "src/state/provider.tsx",
+        "src/features/home/SwipeDeck.tsx",
+        "src/features/discover/StoryMap.tsx"
+      ],
+      "approvedComp": false,
+      "referenceScreenshotsAvailable": false,
+      "deployed": false
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Vivid green action with a navy label and visible focus.",
+      "html": "<button class=\"ds-primary\">Save story</button>",
+      "css": ".ds-primary{font-family:Manrope,sans-serif;font-size:14px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:30px;padding:12px 20px;min-height:44px;background:var(--accent,#00c853);color:#142033;cursor:pointer;transition:background .18s cubic-bezier(.2,.8,.2,1),transform .18s cubic-bezier(.2,.8,.2,1)}.ds-primary:hover{background:#00b94d}.ds-primary:focus-visible{outline:3px solid var(--green,#087a35);outline-offset:4px}.ds-primary:active{transform:scale(.98)}.ds-primary:disabled{opacity:.4;cursor:not-allowed}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Selected Topic",
+      "kind": "chip",
+      "refersTo": "chip-selected",
+      "description": "Selected filter chip with deeper green text.",
+      "html": "<button class=\"ds-chip\" aria-pressed=\"true\">Environment</button>",
+      "css": ".ds-chip{font-family:Manrope,sans-serif;font-size:13px;font-weight:700;min-height:44px;padding:10px 15px;border:1px solid var(--green,#087a35);border-radius:30px;background:var(--selected,#eaf8ee);color:var(--green,#087a35);cursor:pointer}.ds-chip:hover{filter:brightness(.98)}.ds-chip:focus-visible{outline:3px solid var(--green,#087a35);outline-offset:4px}.ds-chip:active{transform:scale(.98)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Written Bright Side visual contract (no additional metaphor approved)",
+    "overview": "Calm and intentional mobile discovery. Warm off-white, white editorial surfaces, navy text, vivid green actions, and locally hosted Manrope; recorded from code against plan.md, without a supplied approved comp.",
+    "keyCharacteristics": [
+      "Portrait editorial deck",
+      "Restrained surface depth",
+      "Visible gesture alternatives",
+      "Persistent Operate-mode bottom tabs",
+      "Focused Read mode"
+    ],
+    "rules": [
+      {
+        "name": "Semantic appearance",
+        "body": "Use semantic variables for light/dark/system appearance; keep action labels navy.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Preserve palette, Manrope, 28px story cards and 20px collections.",
+      "Honor effective reduced motion in CSS, deck, and map.",
+      "Retain fictional demo context and source/date/image-credit labels."
+    ],
+    "donts": [
+      "Do not claim screenshot approval or deployment.",
+      "Do not introduce accounts, sync, autoplay, urgency, or streaks."
+    ]
+  }
+}

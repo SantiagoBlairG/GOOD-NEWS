@@ -1,0 +1,782 @@
+[
+  {
+    "id": "story-1",
+    "slug": "a-forest-finds-its-way-back-one-seedling-at-a-time",
+    "title": "A forest finds its way back, one seedling at a time",
+    "summary": "Neighbors turn a former clearing into a growing native woodland.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Neighbors turn a former clearing into a growing native woodland.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["environment", "community"],
+    "tags": ["environment", "demo", "collaboration"],
+    "publishedAt": "2026-10-13T12:00:00Z",
+    "readingMinutes": 3,
+    "publisher": "Bright Side Demo Studio",
+    "author": null,
+    "image": {
+      "path": "/images/forest.jpg",
+      "alt": "Sunlight falling through a green forest",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "CR",
+      "countryName": "Costa Rica",
+      "placeName": "San José",
+      "longitude": -84.09,
+      "latitude": 9.93
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-2",
+    "slug": "a-community-kitchen-makes-room-for-everyone",
+    "title": "A community kitchen makes room for everyone",
+    "summary": "An open table brings neighbors together over shared meals.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. An open table brings neighbors together over shared meals.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["community"],
+    "tags": ["community", "demo", "collaboration"],
+    "publishedAt": "2026-10-12T12:00:00Z",
+    "readingMinutes": 4,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": {
+      "path": "/images/community.jpg",
+      "alt": "People spending time together outdoors",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "CO",
+      "countryName": "Colombia",
+      "placeName": "Bogotá",
+      "longitude": -74.07,
+      "latitude": 4.71
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-3",
+    "slug": "students-build-a-low-cost-sensor-for-cleaner-water",
+    "title": "Students build a low-cost sensor for cleaner water",
+    "summary": "A classroom prototype gives local water stewards a new tool to explore.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A classroom prototype gives local water stewards a new tool to explore.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["science"],
+    "tags": ["science", "demo", "collaboration"],
+    "publishedAt": "2026-10-11T12:00:00Z",
+    "readingMinutes": 5,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": {
+      "path": "/images/lab.jpg",
+      "alt": "Laboratory equipment for scientific experiments",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "KE",
+      "countryName": "Kenya",
+      "placeName": "Nairobi",
+      "longitude": 36.82,
+      "latitude": -1.29
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-4",
+    "slug": "a-traveling-clinic-brings-care-a-little-closer",
+    "title": "A traveling clinic brings care a little closer",
+    "summary": "A fictional pilot explores a simpler route to routine checkups.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A fictional pilot explores a simpler route to routine checkups.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["health"],
+    "tags": ["health", "demo", "collaboration"],
+    "publishedAt": "2026-10-10T12:00:00Z",
+    "readingMinutes": 3,
+    "publisher": "Bright Side Demo Studio",
+    "author": null,
+    "image": {
+      "path": "/images/health.jpg",
+      "alt": "A healthcare professional in a clinic",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "IN",
+      "countryName": "India",
+      "placeName": "Bengaluru",
+      "longitude": 77.59,
+      "latitude": 12.97
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-5",
+    "slug": "a-library-on-wheels-opens-a-new-chapter",
+    "title": "A library on wheels opens a new chapter",
+    "summary": "Books, storytelling, and a familiar face arrive each week.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Books, storytelling, and a familiar face arrive each week.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["education"],
+    "tags": ["education", "demo", "collaboration"],
+    "publishedAt": "2026-10-09T12:00:00Z",
+    "readingMinutes": 4,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": {
+      "path": "/images/books.jpg",
+      "alt": "Shelves of books in a library",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "AR",
+      "countryName": "Argentina",
+      "placeName": "Buenos Aires",
+      "longitude": -58.38,
+      "latitude": -34.6
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-6",
+    "slug": "small-growers-share-a-bigger-harvest",
+    "title": "Small growers share a bigger harvest",
+    "summary": "A neighborhood cooperative tests shared tools and fairer access to markets.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A neighborhood cooperative tests shared tools and fairer access to markets.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["opportunity", "community"],
+    "tags": ["opportunity", "demo", "collaboration"],
+    "publishedAt": "2026-10-08T12:00:00Z",
+    "readingMinutes": 5,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": {
+      "path": "/images/opportunity.jpg",
+      "alt": "Fresh vegetables growing in a garden",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "CO",
+      "countryName": "Colombia",
+      "placeName": "Bogotá",
+      "longitude": -74.07,
+      "latitude": 4.71
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-7",
+    "slug": "a-safe-corridor-gives-wildlife-room-to-roam",
+    "title": "A safe corridor gives wildlife room to roam",
+    "summary": "Local stewards imagine connecting two habitats with a protected passage.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Local stewards imagine connecting two habitats with a protected passage.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["wildlife"],
+    "tags": ["wildlife", "demo", "collaboration"],
+    "publishedAt": "2026-10-07T12:00:00Z",
+    "readingMinutes": 3,
+    "publisher": "Bright Side Demo Studio",
+    "author": null,
+    "image": {
+      "path": "/images/wildlife.jpg",
+      "alt": "A fox in its natural habitat",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "CA",
+      "countryName": "Canada",
+      "placeName": "Vancouver",
+      "longitude": -123.12,
+      "latitude": 49.28
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-8",
+    "slug": "a-school-garden-becomes-a-tiny-urban-refuge",
+    "title": "A school garden becomes a tiny urban refuge",
+    "summary": "Native plants create space for pollinators between busy streets.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Native plants create space for pollinators between busy streets.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["environment"],
+    "tags": ["environment", "demo", "collaboration"],
+    "publishedAt": "2026-10-06T12:00:00Z",
+    "readingMinutes": 4,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": {
+      "path": "/images/garden.jpg",
+      "alt": "A gardener tending green plants",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "JP",
+      "countryName": "Japan",
+      "placeName": "Tokyo",
+      "longitude": 139.69,
+      "latitude": 35.68
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-9",
+    "slug": "neighbors-trade-skills-instead-of-money",
+    "title": "Neighbors trade skills instead of money",
+    "summary": "A repair afternoon brings old belongings and new friendships to life.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A repair afternoon brings old belongings and new friendships to life.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["community"],
+    "tags": ["community", "demo", "collaboration"],
+    "publishedAt": "2026-10-05T12:00:00Z",
+    "readingMinutes": 5,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": null,
+    "location": {
+      "countryCode": "PT",
+      "countryName": "Portugal",
+      "placeName": "Lisbon",
+      "longitude": -9.14,
+      "latitude": 38.72
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-10",
+    "slug": "a-new-solar-prototype-starts-with-everyday-materials",
+    "title": "A new solar prototype starts with everyday materials",
+    "summary": "A fictional student team shares an early experiment, with results still to be tested.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A fictional student team shares an early experiment, with results still to be tested.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["science"],
+    "tags": ["science", "demo", "collaboration"],
+    "publishedAt": "2026-10-13T12:00:00Z",
+    "readingMinutes": 3,
+    "publisher": "Bright Side Demo Studio",
+    "author": null,
+    "image": {
+      "path": "/images/solar.jpg",
+      "alt": "Solar panels collecting sunlight",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "AU",
+      "countryName": "Australia",
+      "placeName": "Sydney",
+      "longitude": 151.21,
+      "latitude": -33.87
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-11",
+    "slug": "walking-groups-turn-a-small-habit-into-shared-support",
+    "title": "Walking groups turn a small habit into shared support",
+    "summary": "A community-led pilot makes gentle movement more welcoming.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A community-led pilot makes gentle movement more welcoming.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["health", "community"],
+    "tags": ["health", "demo", "collaboration"],
+    "publishedAt": "2026-10-12T12:00:00Z",
+    "readingMinutes": 4,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": {
+      "path": "/images/community.jpg",
+      "alt": "People spending time together outdoors",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "GB",
+      "countryName": "United Kingdom",
+      "placeName": "Manchester",
+      "longitude": -2.24,
+      "latitude": 53.48
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-12",
+    "slug": "an-after-school-club-makes-science-feel-within-reach",
+    "title": "An after-school club makes science feel within reach",
+    "summary": "Volunteer mentors help young people ask questions and build together.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Volunteer mentors help young people ask questions and build together.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["education"],
+    "tags": ["education", "demo", "collaboration"],
+    "publishedAt": "2026-10-11T12:00:00Z",
+    "readingMinutes": 5,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": {
+      "path": "/images/students.jpg",
+      "alt": "Students learning together",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "KE",
+      "countryName": "Kenya",
+      "placeName": "Nairobi",
+      "longitude": 36.82,
+      "latitude": -1.29
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-13",
+    "slug": "a-river-cleanup-begins-with-listening",
+    "title": "A river cleanup begins with listening",
+    "summary": "Residents map everyday sources of litter before planning their next steps.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Residents map everyday sources of litter before planning their next steps.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["environment"],
+    "tags": ["environment", "demo", "collaboration"],
+    "publishedAt": "2026-10-10T12:00:00Z",
+    "readingMinutes": 3,
+    "publisher": "Bright Side Demo Studio",
+    "author": null,
+    "image": {
+      "path": "/images/river.jpg",
+      "alt": "A river flowing through a green landscape",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "PT",
+      "countryName": "Portugal",
+      "placeName": "Lisbon",
+      "longitude": -9.14,
+      "latitude": 38.72
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-14",
+    "slug": "a-coastal-watch-team-keeps-an-eye-on-nesting-season",
+    "title": "A coastal watch team keeps an eye on nesting season",
+    "summary": "Volunteers practice a quieter approach to sharing the shore.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Volunteers practice a quieter approach to sharing the shore.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["wildlife"],
+    "tags": ["wildlife", "demo", "collaboration"],
+    "publishedAt": "2026-10-09T12:00:00Z",
+    "readingMinutes": 4,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": {
+      "path": "/images/coast.jpg",
+      "alt": "Waves on a coastline",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "CR",
+      "countryName": "Costa Rica",
+      "placeName": "San José",
+      "longitude": -84.09,
+      "latitude": 9.93
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-15",
+    "slug": "a-makers-workshop-opens-its-doors-to-first-time-founders",
+    "title": "A makers workshop opens its doors to first-time founders",
+    "summary": "Shared tools make it easier to try a small business idea.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Shared tools make it easier to try a small business idea.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["opportunity"],
+    "tags": ["opportunity", "demo", "collaboration"],
+    "publishedAt": "2026-10-08T12:00:00Z",
+    "readingMinutes": 5,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": null,
+    "location": {
+      "countryCode": "IN",
+      "countryName": "India",
+      "placeName": "Bengaluru",
+      "longitude": 77.59,
+      "latitude": 12.97
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-16",
+    "slug": "a-neighborhood-finds-connection-in-a-shared-garden",
+    "title": "A neighborhood finds connection in a shared garden",
+    "summary": "Growing food together creates a place to meet across generations.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. Growing food together creates a place to meet across generations.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["community", "environment"],
+    "tags": ["community", "demo", "collaboration"],
+    "publishedAt": "2026-10-07T12:00:00Z",
+    "readingMinutes": 3,
+    "publisher": "Bright Side Demo Studio",
+    "author": null,
+    "image": {
+      "path": "/images/garden.jpg",
+      "alt": "A gardener tending green plants",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "CA",
+      "countryName": "Canada",
+      "placeName": "Vancouver",
+      "longitude": -123.12,
+      "latitude": 49.28
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-17",
+    "slug": "open-tools-help-people-explore-the-night-sky",
+    "title": "Open tools help people explore the night sky",
+    "summary": "A fictional collaboration makes learning astronomy easier to access.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A fictional collaboration makes learning astronomy easier to access.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["science"],
+    "tags": ["science", "demo", "collaboration"],
+    "publishedAt": "2026-10-06T12:00:00Z",
+    "readingMinutes": 4,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": {
+      "path": "/images/science.jpg",
+      "alt": "Earth at night viewed from space",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": null,
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-18",
+    "slug": "a-quiet-room-gives-young-readers-space-to-discover-stories-in-their-own-time-with-support-from-the-whole-neighborhood",
+    "title": "A quiet room gives young readers space to discover stories in their own time, with support from the whole neighborhood",
+    "summary": "A small reading initiative puts comfort, choice, and curiosity first.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A small reading initiative puts comfort, choice, and curiosity first.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["education"],
+    "tags": ["education", "demo", "collaboration"],
+    "publishedAt": "2026-10-05T12:00:00Z",
+    "readingMinutes": 5,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": {
+      "path": "/images/books.jpg",
+      "alt": "Shelves of books in a library",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "JP",
+      "countryName": "Japan",
+      "placeName": "Tokyo",
+      "longitude": 139.69,
+      "latitude": 35.68
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-19",
+    "slug": "a-peer-support-circle-makes-conversations-easier",
+    "title": "A peer support circle makes conversations easier",
+    "summary": "A fictional community initiative offers time, listening, and a welcoming place.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A fictional community initiative offers time, listening, and a welcoming place.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["health"],
+    "tags": ["health", "demo", "collaboration"],
+    "publishedAt": "2026-10-13T12:00:00Z",
+    "readingMinutes": 3,
+    "publisher": "Bright Side Demo Studio",
+    "author": null,
+    "image": {
+      "path": "/images/community.jpg",
+      "alt": "People spending time together outdoors",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "AU",
+      "countryName": "Australia",
+      "placeName": "Sydney",
+      "longitude": 151.21,
+      "latitude": -33.87
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-20",
+    "slug": "repair-caf-s-help-useful-things-stay-useful",
+    "title": "Repair cafés help useful things stay useful",
+    "summary": "A global fictional network shares skills for fixing everyday objects.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A global fictional network shares skills for fixing everyday objects.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["environment"],
+    "tags": ["environment", "demo", "collaboration"],
+    "publishedAt": "2026-10-12T12:00:00Z",
+    "readingMinutes": 4,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": null,
+    "location": null,
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-21",
+    "slug": "a-volunteer-team-plans-a-gentler-habitat-restoration",
+    "title": "A volunteer team plans a gentler habitat restoration",
+    "summary": "A demo story about patient observation and thoughtful conservation.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A demo story about patient observation and thoughtful conservation.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["wildlife", "community"],
+    "tags": ["wildlife", "demo", "collaboration"],
+    "publishedAt": "2026-10-11T12:00:00Z",
+    "readingMinutes": 5,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": {
+      "path": "/images/forest.jpg",
+      "alt": "Sunlight falling through a green forest",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "AR",
+      "countryName": "Argentina",
+      "placeName": "Buenos Aires",
+      "longitude": -58.38,
+      "latitude": -34.6
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-22",
+    "slug": "a-skills-exchange-helps-newcomers-take-the-next-step",
+    "title": "A skills exchange helps newcomers take the next step",
+    "summary": "A fictional mentorship program pairs practical training with local support.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A fictional mentorship program pairs practical training with local support.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["opportunity"],
+    "tags": ["opportunity", "demo", "collaboration"],
+    "publishedAt": "2026-10-10T12:00:00Z",
+    "readingMinutes": 3,
+    "publisher": "Bright Side Demo Studio",
+    "author": null,
+    "image": {
+      "path": "/images/students.jpg",
+      "alt": "Students collaborating around a table",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": {
+      "countryCode": "GB",
+      "countryName": "United Kingdom",
+      "placeName": "Manchester",
+      "longitude": -2.24,
+      "latitude": 53.48
+    },
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-23",
+    "slug": "a-community-shares-lessons-beyond-the-classroom",
+    "title": "A community shares lessons beyond the classroom",
+    "summary": "A fictional open-learning project gathers knowledge from many voices.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A fictional open-learning project gathers knowledge from many voices.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["education"],
+    "tags": ["education", "demo", "collaboration"],
+    "publishedAt": "2026-10-09T12:00:00Z",
+    "readingMinutes": 4,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": {
+      "path": "/images/students.jpg",
+      "alt": "Students learning together",
+      "credit": "Unsplash · illustrative stock photograph",
+      "license": "Unsplash License"
+    },
+    "location": null,
+    "sourceUrl": null,
+    "isDemo": true
+  },
+  {
+    "id": "story-24",
+    "slug": "a-small-act-of-kindness-starts-a-wider-conversation",
+    "title": "A small act of kindness starts a wider conversation",
+    "summary": "A fictional story explores how everyday help can build trust.",
+    "body": [
+      "This is a fictional demo story created to show how Bright Side presents hopeful news. It does not describe a verified event. A fictional story explores how everyday help can build trust.",
+      "In this imagined initiative, people begin with a modest idea: listen to the community, work together, and learn from the first steps. The project is presented as a possibility, not evidence of a real-world outcome.",
+      "The fictional participants plan to review what works and share what they learn. Any real version of this story would need independent reporting, accurate dates, source links, and verified results before publication."
+    ],
+    "whyItMatters": "Small, collaborative efforts can be a useful way to think about progress. This fictional example illustrates that idea; it is not proof of an achievement or a scientific result.",
+    "topicIds": ["community"],
+    "tags": ["community", "demo", "collaboration"],
+    "publishedAt": "2026-10-08T12:00:00Z",
+    "readingMinutes": 5,
+    "publisher": "Bright Side Demo Studio",
+    "author": {
+      "name": "Bright Side demo editorial team"
+    },
+    "image": null,
+    "location": null,
+    "sourceUrl": null,
+    "isDemo": true
+  }
+]

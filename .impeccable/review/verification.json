@@ -1,0 +1,155 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "route": "/",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "route": "/discover",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "route": "/saved",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "route": "/profile",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "route": "/story/story-18",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "route": "/discover/map",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/discover",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/saved",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/profile",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/story/story-18",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "route": "/discover/map",
+      "overflow": false
+    },
+    {
+      "width": 430,
+      "route": "/",
+      "overflow": false
+    },
+    {
+      "width": 430,
+      "route": "/discover",
+      "overflow": false
+    },
+    {
+      "width": 430,
+      "route": "/saved",
+      "overflow": false
+    },
+    {
+      "width": 430,
+      "route": "/profile",
+      "overflow": false
+    },
+    {
+      "width": 430,
+      "route": "/story/story-18",
+      "overflow": false
+    },
+    {
+      "width": 430,
+      "route": "/discover/map",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "route": "/discover",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "route": "/saved",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "route": "/profile",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "route": "/story/story-18",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "route": "/discover/map",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/discover",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/saved",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/profile",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/story/story-18",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "route": "/discover/map",
+      "overflow": false
+    }
+  ],
+  "errors": []
+}
