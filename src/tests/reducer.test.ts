@@ -20,15 +20,15 @@ describe('deck state', () => {
   });
   it('undo after final card restores cursor and exact prior save membership', () => {
     let state = initialState();
-    state = reducer(state, { type: 'save', id: state.batch[11], at });
+    state = reducer(state, { type: 'save', id: state.batch[19], at });
     const batch = state.batch;
     for (const id of batch) state = reducer(state, { type: 'advance', kind: 'save', id, at });
-    expect(state.cursor).toBe(12);
+    expect(state.cursor).toBe(20);
     state = reducer(state, { type: 'undo' });
-    expect(state.cursor).toBe(11);
-    expect(state.saved.find((s) => s.id === batch[11])?.savedAt).toBe(at);
+    expect(state.cursor).toBe(19);
+    expect(state.saved.find((s) => s.id === batch[19])?.savedAt).toBe(at);
     state = reducer(state, { type: 'undo' });
-    expect(state.saved.some((s) => s.id === batch[10])).toBe(false);
+    expect(state.saved.some((s) => s.id === batch[18])).toBe(false);
   });
   it('new batches exclude saved and viewed; restart resets viewed', () => {
     let state = initialState();

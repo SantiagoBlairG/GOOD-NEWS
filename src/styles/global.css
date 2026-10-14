@@ -1957,6 +1957,8 @@ section {
   .global-preview {
     margin-top: 36px;
     min-height: 340px;
+    display: flex;
+    align-items: stretch;
   }
   .global-preview .compact-map {
     position: absolute;
@@ -1965,6 +1967,7 @@ section {
   }
   .global-preview-copy {
     padding: 44px;
+    min-height: 340px;
   }
   .global-preview-copy h2 {
     font-size: 38px;

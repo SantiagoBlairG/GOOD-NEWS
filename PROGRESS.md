@@ -30,6 +30,7 @@
 - Known limits: no supplied screenshot references, no physical-phone/screen-reader audit or measured 60fps, no production map account, individual photo contributors unverified, large library bundle warning. App remains fictional and device-local.
 - Impeccable context reported that PRODUCT.md lacks its expanded schema stamp; supplied product facts remain preserved. An optional Impeccable init/schema expansion can be done later without blocking implementation.
 ## Next task
+- Home mobile batches increased to 20 stories, with persisted 12-story sessions expanded while retaining cursor, saves, and Undo history. Desktop continues browsing the complete 24-story catalogue.
 - Desktop Discover preview map now fills the full card height rather than retaining the 255px mobile canvas size. MapLibre observes container resizes and updates its canvas; mobile preview sizing remains unchanged. Build and lint pass.
 - Next-card arrival now scales gently from 97.5% to full size over 320ms with a 220ms fade, on mobile swipes/actions and desktop browsing. Initial page load stays static; reduced motion uses a short fade only. Incoming motion can be interrupted cleanly by the next action. Swipe/desktop browser checks pass (seven cases, one WebKit touch skip), build and lint pass.
 - Page-level back links now share an unindented alignment style across the full map and Saved collections, lining up with their headings while preserving comfortable click targets.

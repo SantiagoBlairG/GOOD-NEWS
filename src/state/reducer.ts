@@ -17,7 +17,7 @@ export const stateSchema = z.object({
   version: z.literal(1),
   saved: z.array(savedEntry),
   preferences: preferencesSchema,
-  batch: z.array(id).max(12),
+  batch: z.array(id).max(20),
   cursor: z.number().int().min(0),
   history: z.array(historyEntry),
   viewed: z.array(id),
@@ -45,7 +45,7 @@ export function newBatch(state: Pick<State, 'saved' | 'preferences' | 'viewed'>,
         Number(b.topicIds.some((t) => state.preferences.topics.includes(t))) -
         Number(a.topicIds.some((t) => state.preferences.topics.includes(t))),
     )
-    .slice(0, 12)
+    .slice(0, 20)
     .map((s) => s.id);
 }
 export function initialState(): State {
@@ -118,6 +118,11 @@ export function sanitizeState(value: unknown): State {
     ...new Map(parsed.saved.filter((s) => known.has(s.id)).map((s) => [s.id, s])).values(),
   ];
   const batch = parsed.batch.filter((id) => known.has(id));
+  // Expand an existing 12-story session without discarding its progress or Undo history.
+  if (parsed.batch.length === 12) {
+    const additions = newBatch({ ...parsed, saved }).filter((id) => !batch.includes(id));
+    batch.push(...additions.slice(0, 20 - batch.length));
+  }
   const cursor = parsed.batch.slice(0, parsed.cursor).filter((id) => known.has(id)).length;
   const history = parsed.history
     .filter((h) => known.has(h.id) && parsed.batch[h.cursor] === h.id && h.cursor < parsed.cursor)

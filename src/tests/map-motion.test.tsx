@@ -64,6 +64,13 @@ afterEach(() => {
 describe('map lifecycle and effective motion', () => {
   it('returns all cluster stories and respects a live app override without remounting', async () => {
     localStorage.clear();
+    vi.stubGlobal(
+      'ResizeObserver',
+      class {
+        observe() {}
+        disconnect() {}
+      },
+    );
     vi.stubGlobal('matchMedia', () => ({
       matches: false,
       addEventListener: () => {},

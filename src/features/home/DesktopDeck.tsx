@@ -62,7 +62,6 @@ export function DesktopDeck() {
           <h1>A brighter world</h1>
           <p>Your daily dose of perspective.</p>
         </div>
-        <Sun className="desktop-heading-sun" aria-hidden="true" />
       </header>
       <div className="desktop-story-layout">
         <div className="desktop-feature-column">

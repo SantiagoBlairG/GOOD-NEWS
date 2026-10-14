@@ -57,7 +57,7 @@ test('article saves and Saved removals retain snackbar confirmation and undo', a
   await expect(page.getByRole('heading', { name: /forest finds/ }).last()).toBeVisible();
 });
 test('final-card Undo works and keyboard discovery works', async ({ page }) => {
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 20; i++) {
     await page.getByRole('button', { name: 'Skip', exact: true }).click();
     await expect(page.getByRole('button', { name: 'Skip', exact: true }))
       .toBeEnabled()
@@ -65,7 +65,7 @@ test('final-card Undo works and keyboard discovery works', async ({ page }) => {
   }
   await expect(page.getByRole('heading', { name: 'A little perspective, gained.' })).toBeVisible();
   await page.getByRole('button', { name: 'Undo', exact: true }).click();
-  await expect(page.getByTestId('swipe-card')).toHaveAttribute('aria-label', /after-school club/);
+  await expect(page.getByTestId('swipe-card')).toHaveAttribute('aria-label', /Repair cafés/);
   await page.getByTestId('swipe-card').focus();
   await page.keyboard.press('ArrowRight');
   await expect(page.getByRole('heading', { name: 'A little perspective, gained.' })).toBeVisible();

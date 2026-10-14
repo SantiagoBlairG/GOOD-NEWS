@@ -84,7 +84,6 @@ function MobileDeck() {
           <h1>A brighter world</h1>
           <p>Your daily dose of perspective.</p>
         </div>
-        <Sun className="heading-sun" />
       </header>
       <div className="deck-meta">
         <button className="undo-button" onClick={undo} disabled={!state.history.length || locked}>
