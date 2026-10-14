@@ -47,6 +47,7 @@ The test configuration starts Vite if needed and reuses a server already running
 ## What works
 
 - Deterministic 12-story deck, swipe thresholds and flicks, visible Skip/Save buttons, keyboard alternatives, exact Undo, calm exhaustion and explicit new batches.
+- Swiping on a card keeps the page stationary and tracks the finger directly. Scroll outside the card to move the page; pinch zoom remains available. Completed swipes continue outward; short or canceled drags return smoothly.
 - Immediate, idempotent saving, including navigation during exit animation. Versioned runtime-validated localStorage; malformed or unavailable storage falls back to usable in-memory state with a message.
 - Article details, full titles/body, author names and portrait avatars, date/source/location/image credit, related stories, origin-aware Back, native share and copy/selectable URL fallback.
 - Discover search and topics combine with AND semantics. URL filters survive article navigation. Lazy MapLibre map with grouped coordinates/clusters, location sheet, Map/List alternatives, failure recovery through the list.

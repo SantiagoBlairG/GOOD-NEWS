@@ -1,6 +1,6 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useLayoutEffect, useEffect } from 'react';
 import { Link } from 'react-router';
-import { motion, useMotionValue, useTransform, useAnimate } from 'motion/react';
+import { motion, useMotionValue, useTransform, animate } from 'motion/react';
 import { Sun, Undo2, X, Bookmark, ArrowUpRight } from 'lucide-react';
 import { useApp } from '../../state/provider';
 import { repository, topicName, date } from '../../lib/repository';
@@ -9,20 +9,32 @@ import { StoryImage } from '../../components/StoryRow';
 import { Button } from '../../components/ui/button';
 import type { Story } from '../../lib/schemas';
 import { useOpenStory } from '../stories/useOpenStory';
+import { useCardSwipe } from './useCardSwipe';
 export function SwipeDeck() {
   const { state, dispatch, notify, reduced } = useApp();
   const openStory = useOpenStory();
   const [exitingStory, setExitingStory] = useState<Story | null>(null);
   const story = exitingStory ?? repository.get(state.batch[state.cursor] ?? '');
-  const [scope, animate] = useAnimate();
+  const card = useRef<HTMLDivElement>(null);
   const x = useMotionValue(0);
+  const opacity = useMotionValue(1);
+  const animations = useRef<Array<{ stop: () => void }>>([]);
   const rotation = useTransform(x, [-250, 0, 250], reduced ? [0, 0, 0] : [-12, 0, 12]);
   const saveOpacity = useTransform(x, [20, 110], [0, 1]);
   const skipOpacity = useTransform(x, [-110, -20], [1, 0]);
   const [locked, setLocked] = useState(false);
   const lock = useRef(false);
-  const moved = useRef(false);
-  const pointerStart = useRef<{ x: number; y: number } | null>(null);
+  const swipe = useCardSwipe({
+    x,
+    reduced,
+    isLocked: () => lock.current,
+    onCommit: (kind) => void commit(kind),
+  });
+  useLayoutEffect(() => {
+    x.set(0);
+    opacity.set(1);
+  }, [story?.id, x, opacity]);
+  useEffect(() => () => animations.current.forEach((animation) => animation.stop()), []);
   async function commit(kind: 'skip' | 'save') {
     if (!story || lock.current) return;
     lock.current = true;
@@ -33,18 +45,16 @@ export function SwipeDeck() {
       `${kind === 'save' ? 'Saved' : 'Skipped'}. ${repository.get(state.batch[state.cursor + 1] ?? '')?.title ?? 'This batch is complete.'}`,
     );
     try {
-      await animate(
-        scope.current,
-        {
-          x: reduced ? 0 : kind === 'save' ? 550 : -550,
-          opacity: 0,
-          rotate: reduced ? 0 : kind === 'save' ? 12 : -12,
-        },
-        { duration: reduced ? 0.08 : 0.28 },
-      );
-      x.set(0);
-      if (scope.current)
-        await animate(scope.current, { x: 0, rotate: 0, opacity: 1 }, { duration: 0 });
+      animations.current.forEach((animation) => animation.stop());
+      const width = card.current?.offsetWidth ?? 350;
+      const exitDistance = Math.max(width + 120, Math.abs(x.get()) + width * 0.5);
+      const exit = animate(x, reduced ? x.get() : (kind === 'save' ? 1 : -1) * exitDistance, {
+        duration: reduced ? 0 : 0.24,
+        ease: [0.32, 0.72, 0, 1],
+      });
+      const fade = animate(opacity, 0, { duration: reduced ? 0.08 : 0.2 });
+      animations.current = [exit, fade];
+      await Promise.all([exit, fade]);
     } finally {
       setExitingStory(null);
       lock.current = false;
@@ -82,49 +92,22 @@ export function SwipeDeck() {
             <div className="behind back-two" aria-hidden="true" />
             <div className="behind back-one" aria-hidden="true" />
             <motion.div
-              ref={scope}
+              ref={card}
               key={story.id}
               className="story-card"
               data-testid="swipe-card"
               role="link"
               tabIndex={locked ? -1 : 0}
               aria-label={`Read ${story.title}`}
-              style={{ x, rotate: rotation }}
-              drag={locked ? false : 'x'}
-              dragConstraints={{ left: 0, right: 0 }}
-              dragElastic={0.85}
-              dragSnapToOrigin
-              onPointerDown={(e) => {
-                moved.current = false;
-                pointerStart.current = { x: e.clientX, y: e.clientY };
-              }}
-              onPointerMove={(e) => {
-                if (
-                  pointerStart.current &&
-                  Math.hypot(
-                    e.clientX - pointerStart.current.x,
-                    e.clientY - pointerStart.current.y,
-                  ) > 8
-                )
-                  moved.current = true;
-              }}
-              onPointerCancel={() => {
-                pointerStart.current = null;
-                moved.current = true;
-                x.set(0);
-              }}
-              onDragEnd={(event, info) => {
-                moved.current = true;
-                if (event.type === 'pointercancel') return;
-                const width = scope.current?.getBoundingClientRect().width ?? 350;
-                if (
-                  Math.abs(info.offset.x) > width * 0.25 ||
-                  (Math.abs(info.offset.x) >= 40 && Math.abs(info.velocity.x) > 700)
-                )
-                  void commit(info.offset.x > 0 ? 'save' : 'skip');
-              }}
+              style={{ x, rotate: rotation, opacity }}
+              onPointerDown={swipe.onPointerDown}
+              onPointerMove={swipe.onPointerMove}
+              onPointerUp={swipe.onPointerUp}
+              onPointerCancel={swipe.onPointerCancel}
+              onLostPointerCapture={swipe.onLostPointerCapture}
+              onDragStart={(event) => event.preventDefault()}
               onClick={(event) => {
-                if (!moved.current && !lock.current) openStory(story.id, event.currentTarget);
+                if (!swipe.wasDragged() && !lock.current) openStory(story.id, event.currentTarget);
               }}
               onKeyDown={(e) => {
                 if (e.key === 'Enter' || e.key === ' ') {

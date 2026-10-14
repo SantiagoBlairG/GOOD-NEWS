@@ -161,6 +161,14 @@
       "reduced": "120ms opacity-only, live OS preference",
       "navigation": "Await committed article before native snapshot; Back interrupts",
       "fallback": "CSS entrance when View Transitions unavailable"
+    },
+    "swipeInteraction": {
+      "touchAction": "pinch-zoom",
+      "scroll": "Card gestures reserve single-finger motion; scrolling outside cards remains native",
+      "tracking": "Pointer capture and direct MotionValue displacement",
+      "threshold": "25% of fixed card width or a 700px/s matching-direction flick with 40px travel",
+      "exit": "240ms outward motion with no competing snap-back",
+      "cancel": "Short drag, pointercancel, lost capture, second finger, or blur returns the card"
     }
   },
   "components": [
